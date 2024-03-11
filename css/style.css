@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* get started section */
+
+.get-started{
+	margin: 2% 0 10%;
+    height: 80vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    background: #def1f9;
+}
+
+.get-started .left-side .heading{
+	color: #2F327D;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: justify;
+	margin-bottom: 8%;
+}
+
+.get-started .left-side .info {
+    margin-top: 15px; /* Adjust the top margin as needed */
+}
+
+.get-started .left-side .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.get-started .left-side .info ul li {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: #2F327D;
+    margin-bottom: 10px;/
+}
+
+.get-started .left-side ul .info-divider {
+    width: 100%;
+    border-top: 1px dotted #2408c4;
+    margin: 10px 0;
+}
+
+
+.get-started .left-side .register-button {
+    margin-top: 10%;
+    border-radius: 25px; 
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: background-color 0.3s;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  .get-started .left-side .register-button:hover {
+    background-color: #45b9ef;
+    color: black;
+  }
+  
+.get-started .right-side {
+    width: 50%;
+    height: 25em;
+    position: relative;
+}
+
+.get-started .right-side img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.get-started .middle-img {
+    width: 20% !important;
+    height: 30% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    /* used for placing at the middle */
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.get-started .first-img {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.get-started .second-img {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.get-started .third-img {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.get-started .fourth-img {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+/* reviews section */
+
+.review-heading{
+	margin-top: 3%;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #2F327D;
+    font-family: "Poppins", Sans-serif;
+    font-weight: bold;
+	font-size: larger;
+    line-height: 54px;
+    margin: 0 0 40px;
+
+}
+
+ .swiper {
+	width: 90%;
+    height: 60%;
+    margin-bottom: 20vh;
+	margin-top: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+	margin: 2%;
+    border-radius: 10px;
+	cursor: pointer;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.designation {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.reviews {
+    line-height: 1.5;
+}
+
+.swiper-pagination{
+	margin-top: 100%;
+}
+
+/* end of reviews section */
+
+
+
+
+/* faq section */
+
+.faq-heading{
+	font-family: "Nunito Sans", Sans-serif;
+    font-size: 50px;
+}
+
+.body-faq{
+    margin: 5% 10% 10%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.layout {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.faq {
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 0.4em;
+	border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+
+.question{
+	display: flex;
+	justify-content: space-between;
+}
+
+.question p {
+	font-family: "Poppins", Sans-serif;
+	font-size: 1.15em;
+    font-weight: bold;
+}
+
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.8s ease-in-out;
+	margin-top: 2%;
+}
+
+.answer p {
+	margin: 5px;
+	font-size: 1em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-radius: 10px;
+}
+
+.faq:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.faq.active .answer {
+	max-height: 30vh;
+}
+
+.faq.active svg{
+	transition: 0.5s ease;
+	transform: rotate(180deg);
+}
+
+
+/* faq section ends */
+
+
+
+
+/* footer section */
+footer{
+	background: #2F327D;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-nav{
+	padding: 1% 4% 1%;
+}
+.footer-nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+/* for the copyright section of the footer */
+#copyright{
+	margin-left: 4%;
+	color: white;
+	font-size: 1em;
+	opacity: 0.6;
+	width: 15%;
+}
+
+
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0 1%;
+}
+
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 20px;
+    opacity: 0.3;
+
+}
+
+.footer-icons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* footer section ends */
+
+/* responsiveness for the footer section  */
+
+@media (max-width: 1250px) {
+	
+	footer{
+		height:15%;
+	}
+	.footer-nav{
+		padding: 1% 4% 1%;
+	}
+
+}

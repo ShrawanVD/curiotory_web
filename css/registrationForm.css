@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f6f6;
+}
+
+.content {
+    margin-top: -25%;
+    padding: 20% 20% 10%;
+}
+
+.registration-form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 25% 5% 10%;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    color: #2F327D;
+    font-size: 1.3em;
+    margin: 20% 0;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.images img {
+    margin-top: 9%;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+}
+
+.registration-form::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px; 
+    background-color: #8bc34a;
+    border-radius: 0 20px 20px 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.gender-options{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.gender-options input[type="radio"] {
+    margin: 0 5px 0 10px;
+}
+
+.gender-options input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+.languages-options{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.languages-options input[type="checkbox"] {
+    margin: 0 2px 0 10px;
+}
+
+.languages-options input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: calc(100% - 10px); 
+    box-sizing: border-box;
+}
+
+.qualification{
+    margin-bottom: 4%;
+}
+
+.qualification label {
+    display: block;
+}
+
+.qualification-section select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.qualification-section select:hover,
+.qualification-section select:focus {
+    border-color: #666;
+}
+
+
+.student-group-options{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.student-group-options input[type="checkbox"] {
+    margin: 0 2px 0 10px;
+}
+
+.student-group-options input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+
+.english-language-proficiency{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.english-language-proficiency input[type="checkbox"] {
+    margin: 0 2px 0 10px;
+}
+
+.english-language-proficiency input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+
+.experience-options{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.experience-options input[type="radio"] {
+    margin: 0 5px 0 10px;
+}
+
+.experience-options input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+
+
+.certificates-have-or-not-options{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.certificates-have-or-not-options input[type="radio"] {
+    margin: 0 5px 0 10px;
+}
+
+.certificates-have-or-not-options input{
+    padding: 8px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+#expTranslation::placeholder {
+    color: #999; 
+    font-size: 1.3em;
+    font-family: "Nunito Sans", sans-serif; 
+}
+
+
+/* rate per hour */
+
+
+.rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 2%;
+}
+
+.rate-input {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 10px);
+}
+
+#ratePerHour {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+
+#ratePerMonth {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.rate-controls button {
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+#ratePerHour:hover,
+#ratePerHour:focus {
+    border-color: #666;
+}
+
+
+textarea.limited-height {
+    max-height: 100px; 
+    resize: vertical;
+}
+
+
+.submit-center {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8bc34a;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    color: white;
+    background-color: green; /* Adjust the color on hover as needed */
+}
+
+
+
+/* footer section */
+footer{
+	background: #2F327D;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-nav{
+	padding: 1% 4% 1%;
+}
+.footer-nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+/* for the copyright section of the footer */
+#copyright{
+	margin-left: 4%;
+	color: white;
+	font-size: 1em;
+	opacity: 0.6;
+	width: 15%;
+}
+
+
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0 1%;
+}
+
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 20px;
+    opacity: 0.3;
+
+}
+
+.footer-icons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* footer section ends */
