@@ -67,7 +67,7 @@
 
 }
 .meet-the-tutor-heading h1{
-    color: rgb(11, 75, 148);
+    color: rgb(54, 91, 133);
     font-family: "Nunito Sans", Sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -191,3 +191,66 @@
     background-color: #EBFAFF;
     border: 1px solid rgb(53, 53, 138);
 }
+
+/* footer section */
+footer{
+	background: #2F327D;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-nav{
+	padding: 1% 4% 1%;
+}
+.footer-nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+/* for the copyright section of the footer */
+#copyright{
+	margin-left: 4%;
+	color: white;
+	font-size: 1em;
+	opacity: 0.6;
+	width: 15%;
+}
+
+
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0 1%;
+}
+
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 20px;
+    opacity: 0.3;
+
+}
+
+.footer-icons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* footer section ends */
