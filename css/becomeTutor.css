@@ -3,6 +3,64 @@
   padding: 0;
 }
 
+
+
+/* navigation bar */
+
+.nav-bar{
+  padding: 1em 2em 0em 2em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+}
+.home-list ul{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+}
+.home-list li{
+  list-style: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.home-list li a:hover{
+  color: #007EF3;
+}
+.home-list li a{
+  text-decoration: none;
+  color: black;
+}
+.button{
+  align-content: center;
+  align-items: center;
+}
+.button button{
+  background-color: #007EF3;
+  border: none;
+  color: white;
+  border-radius: 40px 40px 40px 40px;
+  padding: 5px 40px;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 100px ;
+  cursor: pointer;
+}
+.button button:hover{
+  color:#007EF3;
+  background-color: white;
+  border: 1px solid #007EF3;
+  font-weight: 500;
+}
+.button img{
+  cursor: pointer;
+}
+/* ------ */
+
+
 /* first and third section of the become tutor page */
 
 .become-tutor-first-section {
