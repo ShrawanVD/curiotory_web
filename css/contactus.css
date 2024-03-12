@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #EBFAFF !important; */
+}
+.nav-bar{
+    padding: 1rem 1em 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+    background-color: #EBFAFF !important;
+}
+.home-list ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+}
+.home-list li{
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.home-list li a:hover{
+    color: #007EF3;
+}
+.home-list li a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    align-content: center;
+    align-items: center;
+}
+.button button{
+    background-color: #007EF3;
+    border: none;
+    color: white;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px 40px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 100px ;
+    cursor: pointer;
+}
+.button button:hover{
+    color:#007EF3;
+    background-color: white;
+    border: 1px solid #007EF3;
+    font-weight: 500;
+}
+.button img{
+    cursor: pointer;
+}
+
+/* Contact us css section */
+.contact-us{
+    background-color: #EBFAFF;
+    padding-bottom: 2rem;
+
+}
+.contactus-details{
+    padding: 4rem 30rem;
+    text-align: center;
+}
+.contactus-details img{
+    margin: 0rem 0rem 1rem;
+}
+.contactus-details h1,p{
+    margin: 0rem 0rem 1rem;
+}
+.contactus-details h1{
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+.contactus-details p{
+    font-size: 20px;
+}
+
+/* form section */
+.form-section{
+    margin: 0rem 15rem 2rem;
+    border-radius: 30px;
+    background-color: white;
+    padding: 4rem 7rem;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    background-color: #1d2951;
+    background-image: linear-gradient(315deg, #a3bac2 0%, #e2edff 74%);
+
+}
+.form-section form label,input,textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.form-section form label{
+    font-size: 16px;
+}
+.form-section form input{
+    padding: 10px 10px;
+    margin: 18px 0px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.form-section form textarea{
+    padding: 10px 10px;
+    margin: 18px 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 10rem;
+}
+.form-section form button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(71, 71, 156);
+    color: rgb(71, 71, 156);
+    cursor: pointer;
+}
+.form-section form button:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(71, 71, 156);
+}

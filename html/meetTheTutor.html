@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Tutor</title>
+    <link rel="stylesheet" href="/css/meetTheTutor.css">
+</head>
+<body>
+<nav class="nav-bar">
+        <a href="../index.html"><img width="178" height="44" src="https://curiotory.com/wp-content/uploads/2021/12/cropped-Curriotory_Logo_201X50.png"  class="logo"/></a>
+        <div class="home-list">
+            <ul>
+            <li><a>Platform</a></li>
+            <li><a>Language Solutions</a></li>
+            <li><a>Resources</a></li>
+            <li><a href="/html/meetTheTutor.html">Meet the Tutors</a></li>
+            <li><a>About Us</a></li>
+            <li><a href="/html/contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button id="nav-button">Register for our<br> FREE Demo</button></a>
+        </div>
+        
+        <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61" height="58" src="https://curiotory.com/wp-content/uploads/2023/02/google-play-store-logo.png" /></a>
+</nav>
+<div class="meet-the-tutor">
+    <div class="meet-the-tutor-left-part">
+        <div class="meet-the-tutor-heading">
+            <h1>M<span style="color: #77afc6;">eet</span> T<span style="color: #77afc6;">he</span> T<span style="color: #77afc6;">utors</span></h1>
+        </div>
+        <div class="meet-the-tutor-dropdown">
+            <Label style="color: #287596;" for="language">Language: </Label>
+            <select id="language">
+                <option value="French">French</option>
+                <option value="Russian">Russian</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select> 
+            <br>    
+            <label style="color: #287596;" for="native">Native: </label>
+            <select id="native">
+                <option value="Indian">India</option>
+                <option value="French">French</option>
+                <option value="Russian">Russia</option>
+                <option value="Uk">Uk</option>
+            </select>
+            <br>
+            <button onclick="filterData()" class="filter-button">Filter</button>
+        </div>
+    </div>
+    <div class="meet-the-tutor-right-part">
+        <img src="https://curiotory.com/wp-content/uploads/2022/02/Group-244-1.svg" />
+    </div>
+</div>
+<div class="teachers-data">
+
+    <!-- Teachers Details after Filtering -->
+    <div class="info">
+    <div class="container">
+        <div class="left-section" >
+          <div class="card">
+            <div class="info-left">
+            <img src="" alt="Person Photo">
+            <h2 id="lang-text"></h2>
+            </div>
+            
+            <div class="info-right">
+            <p id="lang-text"></p><br><br>
+            <p><strong>Proficiency level :</strong><span id="proflevel"></span></p><br>
+            <p><strong>Certificate :</strong><span id="certificate"></span></p><br>
+            <p><strong>No of student taught till date :</strong> <span id="noStud"></span> </p><br>
+            <p><strong>Experience :</strong> <span id="experience"></span></p><br>
+            <p><strong>No of hours taught till date :</strong><span id="noHours"></span> </p><br>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+            <iframe width="560" height="330" src="https://youtu.be/AYRZupz6rdw?si=faAU-2QuXRR_FMm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br> 
+            <button>Send Message</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button>Book free Demo</button></a>
+        </div>
+      </div>
+    </div>
+
+</div>
+    
+<script src="js/funct.js"></script>
+</body>
+</html>
