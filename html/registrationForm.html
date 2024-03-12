@@ -13,6 +13,47 @@
     <title>Teaching Application Form</title>
   </head>
   <body>
+    <!-- navbar -->
+
+    <nav class="nav-bar">
+      <a href="../index.html">
+      <img
+        width="178"
+        height="44"
+        src="https://curiotory.com/wp-content/uploads/2021/12/cropped-Curriotory_Logo_201X50.png"
+        class="logo"
+      />
+      </a>
+      <div class="home-list">
+        <ul>
+          <li><a>Platform</a></li>
+          <li><a>Language Solutions</a></li>
+          <li><a>Resources</a></li>
+          <li><a href="html/meetTheTutor.html">Meet the Tutors</a></li>
+          <li><a>About Us</a></li>
+          <li><a href="/html/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="button">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+          ><button id="nav-button">
+            Register for our<br />
+            FREE Demo
+          </button></a
+        >
+      </div>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+        ><img
+          width="61"
+          height="58"
+          src="https://curiotory.com/wp-content/uploads/2023/02/google-play-store-logo.png"
+      /></a>
+    </nav>
+
+    <!-- first section -->
 
     <div class="content">
       <!-- title -->
@@ -170,36 +211,37 @@
           <div class="qualification">
             <label for="qualification">Highest Qualification:</label>
             <div class="qualification-section">
-                <select id="qualification" name="qualification">
-                    <option value="" disabled selected>Please choose an option</option>
-                    <option value="high-school">High School</option>
-                    <option value="diploma">Diploma</option>
-                    <option value="bachelors">Bachelor's Degree</option>
-                    <option value="masters">Master's Degree</option>
-                    <option value="doctorate">Doctorate</option>
-                    <option value="mphill">Mphil</option>
-                    <option value="ma">MA</option>
-                    <option value="ba">BA</option>
-                    <option value="advance-diploma">Advance Diploma</option>
-                    <option value="diploma">Diploma</option>
-                    <option value="c1">C1</option>
-                    <option value="c2">C2</option>
-                    <option value="hsk-5">HSK 5</option>
-                    <option value="hsk-6">HSK 6</option>
-                    <option value="topik-II-5">TOPIK II - 5</option>
-                    <option value="topik-II-6">TOPIK II - 6</option>
-                    <option value="alpt">ALPT</option>
-                    <option value="n1">N1</option>
-                    <option value="n2">N2</option>
-                    <option value="celi4">CELI4 (CEFR)</option>
-                    <option value="celi5">CELI5 (CEFR)</option>
-                    <option value="others">Others</option>
-                </select>
+              <select id="qualification" name="qualification">
+                <option value="" disabled selected>
+                  Please choose an option
+                </option>
+                <option value="high-school">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+                <option value="doctorate">Doctorate</option>
+                <option value="mphill">Mphil</option>
+                <option value="ma">MA</option>
+                <option value="ba">BA</option>
+                <option value="advance-diploma">Advance Diploma</option>
+                <option value="diploma">Diploma</option>
+                <option value="c1">C1</option>
+                <option value="c2">C2</option>
+                <option value="hsk-5">HSK 5</option>
+                <option value="hsk-6">HSK 6</option>
+                <option value="topik-II-5">TOPIK II - 5</option>
+                <option value="topik-II-6">TOPIK II - 6</option>
+                <option value="alpt">ALPT</option>
+                <option value="n1">N1</option>
+                <option value="n2">N2</option>
+                <option value="celi4">CELI4 (CEFR)</option>
+                <option value="celi5">CELI5 (CEFR)</option>
+                <option value="others">Others</option>
+              </select>
             </div>
-        </div>
-        
+          </div>
 
-        <!-- certified institution -->
+          <!-- certified institution -->
           <label for="certifyingInstitution"
             >Name of Certifying Institution:</label
           >
@@ -210,7 +252,7 @@
             required
           /><br />
 
-        <!-- preferred student group -->
+          <!-- preferred student group -->
 
           <label for="student-group">I want to teach:</label>
           <div class="student-group-options">
@@ -232,11 +274,9 @@
               name="student-group"
               value="working"
             />Working professionals
-            </div>
+          </div>
 
-
-
-            <!-- proficiency in english -->
+          <!-- proficiency in english -->
 
           <label for="english-proficiency">I want to teach:</label>
           <div class="english-language-proficiency">
@@ -258,14 +298,18 @@
               name="english-proficiency"
               value="professional"
             />Professional
-            </div>
-
+          </div>
 
           <!-- teaching experience -->
 
           <label for="experience">Teaching Experience:</label>
           <div class="experience-options">
-            <input type="radio" id="one-year" name="experience" value="one-year" />1 year
+            <input
+              type="radio"
+              id="one-year"
+              name="experience"
+              value="one-year"
+            />1 year
             <input
               type="radio"
               id="two-five-years"
@@ -278,16 +322,32 @@
               name="experience"
               value="five-ten-years"
             />5-10 years
-            <input type="radio" id="ten-plus-year" name="experience" value="ten-plus-year" />more than 10 years
+            <input
+              type="radio"
+              id="ten-plus-year"
+              name="experience"
+              value="ten-plus-year"
+            />more than 10 years
           </div>
-
 
           <!-- having teaching certificates ? -->
 
-          <label for="any-certificates">Do you have any teaching certificates?</label>
+          <label for="any-certificates"
+            >Do you have any teaching certificates?</label
+          >
           <div class="certificates-have-or-not-options">
-            <input type="radio" id="yes" name="certificates-have-or-not-options" value="yes" />Yes
-            <input type="radio" id="no" name="certificates-have-or-not-options" value="no" />No
+            <input
+              type="radio"
+              id="yes"
+              name="certificates-have-or-not-options"
+              value="yes"
+            />Yes
+            <input
+              type="radio"
+              id="no"
+              name="certificates-have-or-not-options"
+              value="no"
+            />No
           </div>
 
           <!-- upload teaching certificates -->
@@ -301,7 +361,6 @@
             name="uploadCertificates"
           /><br />
 
-
           <!-- upload photo -->
 
           <label for="uploadPhoto">Upload Your Recent Photo:</label>
@@ -311,7 +370,6 @@
 
           <label for="uploadCV">Upload Your Updated CV:</label>
           <input type="file" id="uploadCV" name="uploadCV" /><br />
-
 
           <!-- describing ourself section -->
 
@@ -328,26 +386,41 @@
           ></textarea
           ><br />
 
-
           <!-- rate per hour section -->
 
           <div class="rate-container">
-        <label for="ratePerHour">Rate Per Hour:</label>
-        <div class="rate-input">
-            <input type="number" id="ratePerHour" name="ratePerHour" placeholder="Enter rate" min="0" step="1" required>
-        </div>
-    </div>
+            <label for="ratePerHour">Rate Per Hour:</label>
+            <div class="rate-input">
+              <input
+                type="number"
+                id="ratePerHour"
+                name="ratePerHour"
+                placeholder="Enter rate"
+                min="0"
+                step="1"
+                required
+              />
+            </div>
+          </div>
 
-    <!-- rate per month section -->
+          <!-- rate per month section -->
 
-    <div class="rate-container">
-        <label for="ratePerMonth">Rate Per Month:</label>
-        <div class="rate-input">
-            <input type="number" id="ratePerMonth" name="ratePerMonth" placeholder="Enter rate" min="0" step="1" required>
-        </div>
-    </div>
+          <div class="rate-container">
+            <label for="ratePerMonth">Rate Per Month:</label>
+            <div class="rate-input">
+              <input
+                type="number"
+                id="ratePerMonth"
+                name="ratePerMonth"
+                placeholder="Enter rate"
+                min="0"
+                step="1"
+                required
+              />
+            </div>
+          </div>
 
-        <!-- additional information section -->
+          <!-- additional information section -->
 
           <label for="additionalInformation"
             >Any Other Additional Information:</label
@@ -356,14 +429,13 @@
             id="additionalInformation"
             name="additionalInformation"
             rows="4"
-            
           ></textarea
           ><br />
 
           <!-- submit button -->
           <div class="submit-center">
             <button type="submit">Submit</button>
-        </div>
+          </div>
         </form>
       </div>
     </div>
