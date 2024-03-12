@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-/* vaibhav code css */
+
+/* navigation bar */
 .nav-bar{
     padding: 1em 2em 0em 2em;
     display: flex;
@@ -295,8 +296,6 @@ width: calc(100% / 7);
 }
 
 .radioset.purpose li {
-/* width: 25%; */
-/* Calculate width for 6 items */
 width: calc(100% / 6);
 }
 
@@ -306,7 +305,6 @@ right: 5%;
 }
 
 .radioset.proficiency li {
-/* width: 25%; */
 width: calc(100% / 6);
 }
 
@@ -322,7 +320,6 @@ background: #2F327D;
 color: #2F327D;
 }
 
-/* If screen width is greater than 768 then show .radioset ul else show .radioset select else*/
 @media (max-width: 768px) {
 .radioset:last-child {
 margin-bottom: 2em;
@@ -361,7 +358,6 @@ display: none;
     background-color: white;
 }
 .col-md-1{
-    /* background-color: white; */
     background-color: #2F327D;
 }
 .col-md-1 label, input{
