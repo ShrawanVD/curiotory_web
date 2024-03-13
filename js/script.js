@@ -44,7 +44,6 @@ container.addEventListener('scroll', () => {
     container.style.overflowX = 'hidden';
 });
 
-// form section js
 
 
 // reviews section
@@ -61,7 +60,6 @@ var swiper = new Swiper(".swiper", {
         clickable: true,
     },
 });
-
 
 // for the faq section
 

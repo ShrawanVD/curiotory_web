@@ -27,6 +27,7 @@
         
         <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61" height="58" src="https://curiotory.com/wp-content/uploads/2023/02/google-play-store-logo.png" /></a>
     </nav>
+
     <div class="contact-us">
         <div class="contactus-details">
             <img width="143" height="143" src="https://curiotory.com/wp-content/uploads/2023/01/Group-385.png" />
@@ -36,13 +37,13 @@
             <p>E-mail Address - <a href="mailto:Support@curiotory.com">Support@curiotory.com</a></p>
         </div>
         <div class="form-section">
-            <form>
-                <label>Your Name</label><br>
-                <input type="text" /><br>
-                <label>Your Email</label><br>
-                <input type="email" /><br>
-                <label>Your Message</label><br>
-                <textarea></textarea><br>
+            <form onsubmit="handleSubmit(event)">
+                <label for="sender_name">Your Name</label><br>
+                <input type="text" name="name" id="sender_name" autocomplete="name"/><br>
+                <label for="sender_email">Your Email</label><br>
+                <input type="email" name="email" id="sender_email" autocomplete="email"/><br>
+                <label for="sender_msg">Your Message</label><br>
+                <textarea name="msg" id="sender_msg" autocomplete="msg"></textarea><br>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -60,7 +61,7 @@
               transform: rotate(-90deg);
               border-top: 0.1px solid rgba(255, 255, 255, 0.5);
             " />
-        <li><a href="html/becomeTutor.html">Become a tutor</a></li>
+        <li><a href="becomeTutor.html">Become a tutor</a></li>
         <hr style="
               color: black;
               width: 1.5%;
@@ -99,6 +100,7 @@
   </footer>
 
   <!-- FOOTER SECTION ENDS -->
+
 
 </body>
 </html>
