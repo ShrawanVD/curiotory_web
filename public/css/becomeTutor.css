@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* navigation bar */
+
+.nav-bar{
+  padding: 1em 2em 0em 2em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+}
+.home-list ul{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+}
+.home-list li{
+  list-style: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.home-list li a:hover{
+  color: #007EF3;
+}
+.home-list li a{
+  text-decoration: none;
+  color: black;
+}
+.button{
+  align-content: center;
+  align-items: center;
+}
+.button button{
+  background-color: #007EF3;
+  border: none;
+  color: white;
+  border-radius: 40px 40px 40px 40px;
+  padding: 5px 40px;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 100px ;
+  cursor: pointer;
+}
+.button button:hover{
+  color:#007EF3;
+  background-color: white;
+  border: 1px solid #007EF3;
+  font-weight: 500;
+}
+.button img{
+  cursor: pointer;
+}
+/* ------ */
+
+
+/* first and third section of the become tutor page */
+
+.become-tutor-first-section {
+  margin: 5% 15% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.become-tutor-first-section .left-side {
+  width: 50%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.become-tutor-first-section .left-side .left-main-heading {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.bold-first {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.become-tutor-first-section .left-side .left-sub-heading {
+  font-size: 1.5em;
+  margin: 2% 0;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+}
+
+.become-tutor-first-section .left-side .left-paragraph {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+}
+
+.register-button {
+  border-radius: 25px;
+  background-color: black;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+.register-button:hover {
+  background-color: #45b9ef;
+  color: black;
+}
+
+/* second and fourth section of the become tutor page */
+
+.second-section-become-tutor {
+  margin: 14% 15% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section-become-tutor .left-side {
+  width: 50%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.second-section-become-tutor .right-side h1 {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.second-section-become-tutor .right-side p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+}
+
+.bold-second {
+  font-weight: 900;
+  font-size: larger;
+}
+
+/* why with us section */
+
+
+.why-with-us {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.why-with-us .heading {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.why-with-us .background {
+  background-color: #2f327d;
+  height: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+.why-with-us .left-side-img {
+  position: relative;
+  z-index: 1;
+  margin-top: -10%;
+}
+
+.why-with-us .left-side-img img {
+  width: 100%;
+}
+
+.why-with-us .right-side-info {
+  color: #fff;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.why-with-us .right-side-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-with-us .right-side-info li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.why-with-us .right-side-info li::before {
+  content: "\2605"; /* Unicode character for a star */
+  color: #ffd700; /* Yellow color for the star */
+  font-size: 1.5em;
+  position: absolute;
+  left: -1.5em; /* to align it to right side and not to collide with the info */
+  top: 50%; /* to make it in same line and not upwards */
+  transform: translateY(-50%); /* to make it in same line and not downwards */
+}
+
+/* enroll section */
+
+.enroll-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.enroll-container .enroll-title {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.phases-for-enroll {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phases-for-enroll .phase {
+  margin: 5% 7% 10%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.phases-for-enroll .phase:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 70%;
+  left: 70%;
+  right: 80%;
+  width: 12em;
+  border-top: 4px dotted #000;
+  z-index: -1;
+}
+
+.phases-for-enroll .phase img {
+  padding-bottom: 15%;
+}
+
+.phases-for-enroll .phase p {
+  font-weight: bolder;
+  width: max-content;
+  align-items: center;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+/* faq section */
+
+.faq-heading {
+  margin-top: 13%;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 50px;
+}
+
+.body-faq {
+  margin: 5% 10% 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layout {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.4em;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question p {
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  margin-top: 2%;
+}
+
+.answer p {
+  margin: 5px;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+}
+
+.faq:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.faq.active .answer {
+  max-height: 30vh;
+}
+
+.faq.active svg {
+  transition: 0.5s ease;
+  transform: rotate(180deg);
+}
+
+/* faq section ends */
+
+
+/* footer section */
+footer{
+	background: #2F327D;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-nav{
+	padding: 1% 4% 1%;
+}
+.footer-nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+/* for the copyright section of the footer */
+#copyright{
+	margin-left: 4%;
+	color: white;
+	font-size: 1em;
+	opacity: 0.6;
+	width: 15%;
+}
+
+
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0 1%;
+}
+
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 20px;
+    opacity: 0.3;
+
+}
+
+.footer-icons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* footer section ends */

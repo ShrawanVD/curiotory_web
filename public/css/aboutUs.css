@@ -1,0 +1,547 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* navigation bar */
+
+.nav-bar{
+    padding: 1em 2em 0em 2em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+  }
+  .home-list ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+  }
+  .home-list li{
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  .home-list li a:hover{
+    color: #007EF3;
+  }
+  .home-list li a{
+    text-decoration: none;
+    color: black;
+  }
+  .button{
+    align-content: center;
+    align-items: center;
+  }
+  .button button{
+    background-color: #007EF3;
+    border: none;
+    color: white;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px 40px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 100px ;
+    cursor: pointer;
+  }
+  .button button:hover{
+    color:#007EF3;
+    background-color: white;
+    border: 1px solid #007EF3;
+    font-weight: 500;
+  }
+  .button img{
+    cursor: pointer;
+  }
+  /* ------ */
+
+
+
+
+/* heading - top section */
+
+.heading-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-tag h1{
+  margin: 5rem 0 3rem;
+    color: #2F327D;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 3.7rem;
+    font-weight: 750;
+    line-height: 4.6rem;
+    text-align: center;
+}
+
+.heading-tag .stats ul li{
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 1.3rem;
+    margin: 2% 0;
+    color: #464646;
+}
+
+
+.bold-first {
+    font-weight: 900;
+  }
+
+
+.register-button {
+    margin-top: 4%;
+    border-radius: 25px;
+    background-color: #45b9ef;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  .register-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+/* sidebar  */
+.sidebar {
+  width: 300px;
+  height: 87%;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  background-color: #EBFAFF;
+  color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the sidebar is on top of other elements */
+}
+
+.sidebar h1{
+  color: #2F327D;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 2rem;
+    font-weight: 750;
+    line-height: 4.6rem;
+    text-align: center;
+}
+
+.sidebar .close-btn {
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.registration-form {
+  padding: 20px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.registration-form input,
+.registration-form select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* background-color: #2F327D; */
+  color: black;
+}
+
+.registration-form button {
+  width: calc(100% - 20px);
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #45b9ef;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bolder;
+  font-family: "Nunito Sans", Sans-serif;
+  transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/* bio section */
+
+.bio{
+    margin: 10% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio p{
+    text-align: center;
+    color: #464646;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 545;
+    line-height: 2.5rem;
+}
+
+
+
+/* tabular  */
+
+.table-comparison{
+  margin: 0 12%;
+  /* padding: 5%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0368FF;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #0368FF;
+  border-collapse:collapse;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+td {
+  padding: 5%;
+  border: 1px solid #0368FF;
+  border-collapse:collapse;
+  font-size: 1.2rem;
+  color: #464646;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+
+/* origin section */
+
+
+.origin-story-section {
+  margin: 14% 15% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.origin-story-section .left-side {
+  width: 50%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.origin-story-section .right-side h1 {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 3.5em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.origin-story-section .right-side p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+  color: #464646;
+}
+
+
+
+/* vision section */
+
+.vision-section{
+  margin: 10% 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision-section h1{
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 3.5em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.vision-of-ours {
+  margin: 1% 15% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-of-ours .left-side {
+  width: 50%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.vision-of-ours .right-side h1 {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.vision-of-ours .right-side p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+  color: #464646;
+}
+
+
+/* mission section */
+
+.mission-section {
+  margin: 0 15% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-section .left-side {
+  width: 50%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.mission-section .left-side .left-main-heading {
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.mission-section .left-side .left-paragraph {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: justify;
+}
+
+
+
+/* founder's section */
+
+.founder-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, white 50%, #EBFAFF 50%);
+}
+
+.founder-section h1{
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 2.8em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.founder-section .persons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 10%; */
+  width: 80%;
+}
+
+/* sheetal mam's section */
+
+.founder-section .persons .sheetal-mam{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 5%;
+}
+
+.founder-section .persons .sheetal-mam .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.founder-section .persons .sheetal-mam .image img{
+  width: 30rem;
+  height: 37rem;
+}
+
+.founder-section .persons .sheetal-mam .name h1{
+  margin-top: 5%;
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.founder-section .persons .sheetal-mam .info p{
+  margin-top: 10%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  line-height: 27.5px;
+}
+
+
+/* ram sir's section */
+
+.founder-section .persons .ram-sir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 5%;
+}
+
+.founder-section .persons .ram-sir .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.founder-section .persons .ram-sir .image img{
+  width: 30rem;
+  height: 37rem;
+}
+
+.founder-section .persons .ram-sir h1{
+  margin-top: 5%;
+  color: #2f327d;
+  font-family: "Nunito Sans", Sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.founder-section .persons .ram-sir .info p{
+  margin-top: 10%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  line-height: 27.5px;
+}
+
+
+
+
+/* footer section */
+footer{
+	background: #2F327D;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-nav{
+	padding: 1% 4% 1%;
+}
+.footer-nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+/* for the copyright section of the footer */
+#copyright{
+	margin-left: 4%;
+	color: white;
+	font-size: 1em;
+	opacity: 0.6;
+	width: 15%;
+}
+
+
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0 1%;
+}
+
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 20px;
+    opacity: 0.3;
+
+}
+
+.footer-icons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* footer section ends */
