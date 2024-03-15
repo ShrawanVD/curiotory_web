@@ -3,8 +3,6 @@
   margin: 0;
 }
 
-
-
 /* navigation bar */
 
 .nav-bar{
@@ -33,6 +31,7 @@
     text-decoration: none;
     color: black;
   }
+
   .button{
     align-content: center;
     align-items: center;
