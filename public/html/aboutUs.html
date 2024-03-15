@@ -86,9 +86,9 @@
     <div class="sidebar" id="sidebar">
       <div class="close-btn" onclick="closeSidebar()">×</div>
       <h1>Quick and Simple enrollment</h1>
-      <form class="registration-form">
+      <form class="registration-form" action="/enroll" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="fullName" required>
     
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -103,11 +103,11 @@
         <select id="languages" name="languages" required>
           <option value="english">English</option>
           <option value="spanish">Spanish</option>
-          <option value="french">Spanish</option>
-          <option value="hindi">Spanish</option>
+          <option value="french">french</option>
+          <option value="hindi">hindi</option>
         </select>
-    
-        <button type="button" class="register-now-btn" onclick="registerNow()">Register Now</button>
+        <!-- onclick="registerNow()" -->
+        <button type="submit" class="register-now-btn">Register Now</button>
       </form>
     </div>
     
@@ -380,29 +380,29 @@ function closeSidebar() {
 }
 
 
-function registerNow() {
+// function registerNow() {
 
-  // Get the values of input fields
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var age = document.getElementById("age").value;
-  var languages = document.getElementById("languages").value;
+//   // Get the values of input fields
+//   var name = document.getElementById("name").value;
+//   var email = document.getElementById("email").value;
+//   var phone = document.getElementById("phone").value;
+//   var age = document.getElementById("age").value;
+//   var languages = document.getElementById("languages").value;
 
-  // Check if any of the required fields are empty
-  if (name === "" || email === "" || phone === "" || age === "" || languages === "") {
-    alert("Please fill in all the required fields.");
-  } else {
-    alert("Registration Successful!");
+//   // Check if any of the required fields are empty
+//   if (name === "" || email === "" || phone === "" || age === "" || languages === "") {
+//     alert("Please fill in all the required fields.");
+//   } else {
+//     alert("Registration Successful!");
 
-    closeSidebar();
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("languages").value = "";
-  }
-}
+//     closeSidebar();
+//     document.getElementById("name").value = "";
+//     document.getElementById("email").value = "";
+//     document.getElementById("phone").value = "";
+//     document.getElementById("age").value = "";
+//     document.getElementById("languages").value = "";
+//   }
+// }
 
 
 

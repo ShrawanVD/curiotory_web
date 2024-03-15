@@ -37,13 +37,13 @@
             <p>E-mail Address - <a href="mailto:Support@curiotory.com">Support@curiotory.com</a></p>
         </div>
         <div class="form-section">
-            <form onsubmit="handleSubmit(event)">
+            <form method="post" action="/sendMsg">
                 <label for="sender_name">Your Name</label><br>
-                <input type="text" name="name" id="sender_name" autocomplete="name"/><br>
+                <input type="text" name="fname" autocomplete="name"/><br>
                 <label for="sender_email">Your Email</label><br>
-                <input type="email" name="email" id="sender_email" autocomplete="email"/><br>
+                <input type="email" name="email" autocomplete="email"/><br>
                 <label for="sender_msg">Your Message</label><br>
-                <textarea name="msg" id="sender_msg" autocomplete="msg"></textarea><br>
+                <textarea name="msg" autocomplete="msg"></textarea><br>
                 <button type="submit">Submit</button>
             </form>
         </div>
