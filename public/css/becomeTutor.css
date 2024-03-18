@@ -3,11 +3,9 @@
   padding: 0;
 }
 
-
-
 /* navigation bar */
 
-.nav-bar{
+.nav-bar {
   padding: 1em 2em 0em 2em;
   display: flex;
   justify-content: space-between;
@@ -16,29 +14,29 @@
   font-family: "Nunito Sans", Sans-serif;
   font-size: 15px;
 }
-.home-list ul{
+.home-list ul {
   display: flex;
   justify-content: space-between;
   margin-left: 140px;
 }
-.home-list li{
+.home-list li {
   list-style: none;
   margin-left: 30px;
   cursor: pointer;
 }
-.home-list li a:hover{
-  color: #007EF3;
+.home-list li a:hover {
+  color: #007ef3;
 }
-.home-list li a{
+.home-list li a {
   text-decoration: none;
   color: black;
 }
-.button{
+.button {
   align-content: center;
   align-items: center;
 }
-.button button{
-  background-color: #007EF3;
+.button button {
+  background-color: #007ef3;
   border: none;
   color: white;
   border-radius: 40px 40px 40px 40px;
@@ -46,20 +44,19 @@
   font-family: "Nunito Sans", Sans-serif;
   font-size: 15px;
   font-weight: 300;
-  margin-left: 100px ;
+  margin-left: 100px;
   cursor: pointer;
 }
-.button button:hover{
-  color:#007EF3;
+.button button:hover {
+  color: #007ef3;
   background-color: white;
-  border: 1px solid #007EF3;
+  border: 1px solid #007ef3;
   font-weight: 500;
 }
-.button img{
+.button img {
   cursor: pointer;
 }
 /* ------ */
-
 
 /* first and third section of the become tutor page */
 
@@ -162,7 +159,6 @@
 }
 
 /* why with us section */
-
 
 .why-with-us {
   position: relative;
@@ -349,68 +345,185 @@
   transform: rotate(180deg);
 }
 
-/* faq section ends */
+/* media queries */
 
-
-/* footer section */
-footer{
-	background: #2F327D;
+@media screen and (max-width: 860px) {
+  .body-faq {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+  }
+
+  .image-container img {
+    height: 30vw;
+  }
+
+  .layout {
+    width: 60vw;
+    /* margin: auto;
+      display: flex;
+      flex-direction: column; */
+  }
 }
-.footer-nav{
-	padding: 1% 4% 1%;
+
+@media screen and (max-width: 450px) {
+  .image-container {
+    display: none;
+  }
 }
-.footer-nav ul{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style-type: none;
+
+/* faq section ends */
+
+/* footer section */
+footer {
+  background: #2f327d;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-.footer-nav ul li a{
-	color: white;
-	text-decoration: none;
-	margin: 20px;
-	font-size: 16px;
-	opacity: 0.6;
+.footer-nav {
+  padding: 1% 4% 1%;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 16px;
+  opacity: 0.6;
 }
 
 /* for the copyright section of the footer */
-#copyright{
-	margin-left: 4%;
-	color: white;
-	font-size: 1em;
-	opacity: 0.6;
-	width: 15%;
+#copyright {
+  margin-left: 4%;
+  color: white;
+  font-size: 1em;
+  opacity: 0.6;
+  width: 15%;
 }
-
 
 /* hover for the footer section */
-.footer-nav ul li a:hover{
-	color: white;
-	opacity: 1;
+.footer-nav ul li a:hover {
+  color: white;
+  opacity: 1;
 }
 
-.footer-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5% 0 1%;
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5% 0 1%;
 }
 
 .footer-icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1%;
-    font-size: 20px;
-    opacity: 0.3;
-
+  color: white;
+  text-decoration: none;
+  margin: 0 1%;
+  font-size: 20px;
+  opacity: 0.3;
 }
 
 .footer-icons a:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Media queries */
+@media screen and (max-width: 860px) {
+  .footer-nav ul li a {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  #copyright {
+    font-size: 0.7rem;
+  }
+
+  .footer-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 0.7rem;
+    opacity: 0.3;
+  }
+
+  /* hover for the footer section */
+  .footer-nav ul li a:hover {
     color: white;
     opacity: 1;
+  }
+
+  .footer-icons a:hover {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-nav {
+    padding: 0;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .footer-nav ul li {
+    margin-left: -9%;
+  }
+
+  .footer-nav ul li a {
+    order: 1; /* Order list items to be at the top */
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    margin-top: 2%;
+  }
+
+  .footer-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+    opacity: 0.3;
+  }
+
+  #copyright {
+    order: 3;
+    margin-left: 25%;
+    /* bottom: 0; */
+    width: 80%;
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+
+  /* hover for the footer section */
+  .footer-nav ul li a:hover {
+    color: white;
+    opacity: 1;
+  }
+
+  .footer-icons a:hover {
+    color: white;
+    opacity: 1;
+  }
 }
 
 /* footer section ends */
