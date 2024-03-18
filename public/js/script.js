@@ -896,3 +896,13 @@ document.addEventListener('DOMContentLoaded', function () {
             })
     });
 });
+
+// try new navbar code 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  

@@ -20,6 +20,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
+  <!-- Bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- form links css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,10 +32,14 @@
 </head>
 
 <body>
+  <!-- bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-<!-- nav bar -->
-  <nav class="nav-bar">
-    <img width="178" height="44"
+  <!-- nav bar -->
+  <!-- <nav class="nav-bar">
+    <img width="178px" height="44px"
       src="./images/Index/0 - logo.png" class="logo" />
     <div class="home-list">
       <ul>
@@ -49,11 +56,56 @@
           id="nav-button">Register for our<br> FREE Demo</button></a>
     </div>
 
-    <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61" height="58"
+    <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61px" height="58px" id="playstore-img"
         src="./images/Index/0 - playstore.png" /></a>
-  </nav>
+    
+  </nav> -->
 
-<!-- cover page section -->
+
+
+
+
+  <!-- try navbar responsive code -->
+  <nav>
+    <div id="navbar">
+      <div id="logo" class="reverse">
+        <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">&#9776;
+        </div>
+        <!-- <div class="logo">Gr<span>id</span> CSS</div> -->
+        <img width="178px" height="44px" src="./images/Index/0 - logo.png" class="logo" />
+      </div>
+      <div id="links">
+        <a href="#">Platform</a>
+        <a href="#">Language Solution</a>
+        <a href="#">Resources</a>
+        <a href="html/meetTheTutor.html">Meet the Tutors</a>
+        <a href="html/aboutUs.html">About Us</a>
+        <a href="html/contactus.html">Contact Us</a>
+        <div class="button">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button
+              id="nav-button">Register for our<br> FREE Demo</button></a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61px"
+            height="58px" id="playstore-img" src="./images/Index/0 - playstore.png" /></a>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mySidenav" class="sidenav">
+    <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Platform</a>
+    <a href="#">Language Solution</a>
+    <a href="#">Resources</a>
+    <a href="html/meetTheTutor.html">Meet the Tutors</a>
+    <a href="html/aboutUs.html">About Us</a>
+    <a href="html/contactus.html">Contact Us</a>
+  </div>
+
+
+
+
+  <!-- cover page section -->
 
   <div class="cover-page">
     <h1>An online language learning platform </h1>
@@ -61,7 +113,8 @@
       <p>Curious about learning new languages? Transform it into a life-changing opportunity.</p>
     </div>
     <div class="coverpage-button">
-      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button>Get
+      <a target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button>Get
           Started</button></a>
     </div>
   </div>
@@ -74,8 +127,6 @@
     <img width="131" height="200" src="./images/Index/cover page - 6.png" />
   </div>
 
-
-
   <!-- sliding window and form -->
   <div class="second-page">
 
@@ -87,73 +138,73 @@
       <div class="sliding-container">
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-292.png" />
+            <img width="216px" height="266pxpx" src="./images/Index/Group-292.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-293.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-293.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-294.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-294.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-295.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-295.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-296.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-296.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-297.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-297.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-298.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-298.png" />
           </a>
-        </div>  
+        </div>
 
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-292.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-292.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-293.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-293.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-294.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-294.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-295.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-295.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-296.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-296.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-297.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-297.png" />
           </a>
         </div>
         <div class="sliding-card ">
           <a>
-            <img width="216" height="266" src="./images/Index/Group-298.png" />
+            <img width="216px" height="266px" src="./images/Index/Group-298.png" />
           </a>
         </div>
 
@@ -356,15 +407,15 @@
         </div>
         <div class="foreign-lang-right-container">
           <div class="foreign-lang-sub-contianer">
-            <img width="140" height="83" src="./images/Index/why foreign - 1.png" />
+            <img width="140px" height="83px" src="./images/Index/why foreign - 1.png" />
             <p>Generic, one-size-fits-all curriculum instead of personalized courses</p>
           </div>
           <div class="foreign-lang-sub-contianer">
-            <img width="140" height="83" src="./images/Index/why foreign - 2.png" />
+            <img width="140px" height="83px" src="./images/Index/why foreign - 2.png" />
             <p>Rigid learning assessment by tutors with limited proficiency & low experience levels</p>
           </div>
           <div class="foreign-lang-sub-contianer">
-            <img width="140" height="83" src="./images/Index/why foreign - 3.png" />
+            <img width="140px" height="83px" src="./images/Index/why foreign - 3.png" />
             <p>Outdated remote technology set-ups that cause learning delays & disruptions</p>
           </div>
         </div>
@@ -379,7 +430,7 @@
           <h1>Why we stand out</h1>
         </div>
         <div class="stand-out-images">
-          <img width="274" height="446" src="./images/Index/why we stand out section.png" />
+          <img width="274px" height="446px" src="./images/Index/why we stand out section.png" />
         </div>
       </div>
       <div class="stand-out-right-section">
@@ -514,26 +565,20 @@
         </ul>
       </div>
 
-      <a class="register-button"
-        target="_blank"
+      <a class="register-button" target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform">Register
         as a teacher</a>
     </div>
 
     <div class="right-side">
 
-        <!-- <img src="./images/Index/get started section - combine.png" alt=""> -->
+      <!-- <img src="./images/Index/get started section - combine.png" alt=""> -->
 
-      <img class="middle-img" width="50" height="50"
-        src="./images/Index/Group-385.png" alt="" />
-      <img class="first-img" width="150" height="130"
-        src="./images/Index/get started - 1.png" alt="" />
-      <img class="second-img" width="150" height="130"
-        src="./images/Index/get started - 2.png" alt="" />
-      <img class="third-img" width="150" height="130"
-        src="./images/Index/get started - 3.png" alt="" />
-      <img class="fourth-img" width="150" height="130"
-        src="./images/Index/get started - 4.png" alt="" />
+      <img class="middle-img" width="50" height="50" src="./images/Index/Group-385.png" alt="" />
+      <img class="first-img" width="150" height="130" src="./images/Index/get started - 1.png" alt="" />
+      <img class="second-img" width="150" height="130" src="./images/Index/get started - 2.png" alt="" />
+      <img class="third-img" width="150" height="130" src="./images/Index/get started - 3.png" alt="" />
+      <img class="fourth-img" width="150" height="130" src="./images/Index/get started - 4.png" alt="" />
     </div>
   </div>
 
@@ -871,8 +916,8 @@
   <!-- FOOTER SECTION ENDS -->
 
 
-<!-- bootstrap js -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- form scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
