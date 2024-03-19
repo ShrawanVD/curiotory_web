@@ -5,7 +5,34 @@
 }
 
 /* try nav code  */
-  
+.button {
+  align-content: center;
+  align-items: center;
+}
+
+.button button {
+  background-color: #007EF3;
+  border: none;
+  color: white;
+  border-radius: 40px 40px 40px 40px;
+  padding: 5px 40px;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.button button:hover {
+  color: #007EF3;
+  background-color: white;
+  border: 1px solid #007EF3;
+}
+
+.button img {
+  cursor: pointer;
+}
+
 #navbar {
   display: grid;
   min-height: 100px;
@@ -110,7 +137,7 @@ a {
   #links{
       margin-left: 20px;
       grid-gap: 18px;
-      align-items: baseline;
+      align-items: center;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
