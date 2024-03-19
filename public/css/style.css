@@ -445,7 +445,7 @@
     background-color: transparent;
     display: flex;
     position: absolute;
-    top: 75%;
+    top: 107%;
     z-index: 1;
     justify-content: space-between;
     width: 100%;
@@ -459,16 +459,16 @@
 
 @media only screen and (max-width: 1200px) {
     .image-line {
-        top: 140%;
+        top: 97%;
     }
     .image-line img{
-        width: 14vw;
-        height: 24vh;
+        width: 15vw;
+        height: 22vh;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .image-line .tablet-visible {
+    .image-line img {
         display: none;
     }
 }
