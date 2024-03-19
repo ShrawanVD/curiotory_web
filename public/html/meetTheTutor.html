@@ -13,39 +13,47 @@
     <link rel="stylesheet" href="../css/meetTheTutor.css" />
   </head>
   <body>
-    <nav class="nav-bar">
-      <a href="../index.html"
-        ><img
-          width="178"
-          height="44"
-          src="../images/Index/0 - logo.png"
-          class="logo"
-      /></a>
-      <div class="home-list">
-        <ul>
-          <li><a>Platform</a></li>
-          <li><a>Language Solutions</a></li>
-          <li><a>Resources</a></li>
-          <li><a href="#">Meet the Tutors</a></li>
-          <li><a href="../html/aboutUs.html">About Us</a></li>
-          <li><a href="../html/contactus.html">Contact Us</a></li>
-        </ul>
+    
+  <!-- try navbar responsive code -->
+  <nav>
+    <div id="navbar">
+      <div id="logo" class="reverse">
+        <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">&#9776;
+        </div>
+        <!-- <div class="logo">Gr<span>id</span> CSS</div> -->
+        <a href="../index.html"><img width="178px" height="44px" src="../images/Index/0 - logo.png" class="logo" /></a>
       </div>
-      <div class="button">
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
-          ><button id="nav-button">
-            Register for our<br />
-            FREE Demo
-          </button></a
-        >
+      <div id="links">
+        <a href="#">Platform</a>
+        <a href="#">Language Solution</a>
+        <a href="#">Resources</a>
+        <a href="#">Meet the Tutors</a>
+        <a href="./aboutUs.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
+        <div class="button">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button
+              id="nav-button">Register for our<br> FREE Demo</button></a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61px"
+            height="58px" id="playstore-img" src="../images/Index/0 - playstore.png" /></a>
       </div>
+    </div>
 
-      <a
-        href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
-        ><img width="61" height="58" src="../images/Index/0 - playstore.png"
-      /></a>
-    </nav>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mySidenav" class="sidenav">
+    <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Platform</a>
+    <a href="#">Language Solution</a>
+    <a href="#">Resources</a>
+    <a href="#">Meet the Tutors</a>
+    <a href="./aboutUs.html">About Us</a>
+    <a href="./contactus.html">Contact Us</a>
+  </div>
+
+
+
+
     <div class="meet-the-tutor">
       <div class="meet-the-tutor-left-part">
         <div class="meet-the-tutor-heading">

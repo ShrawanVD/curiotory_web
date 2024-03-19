@@ -3,65 +3,147 @@
   padding: 0;
 }
 
-/* navigation bar */
+/* try nav code  */
+  
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+}
 
-.nav-bar {
-  padding: 1em 2em 0em 2em;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  font-family: "Nunito Sans", Sans-serif;
-  font-size: 15px;
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
 }
-.home-list ul {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 140px;
-}
-.home-list li {
-  list-style: none;
-  margin-left: 30px;
+
+.logo {
   cursor: pointer;
 }
-.home-list li a:hover {
-  color: #007ef3;
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Nunito Sans", Sans-serif;
 }
-.home-list li a {
+
+#links a {
   text-decoration: none;
   color: black;
-}
-.button {
-  align-content: center;
-  align-items: center;
-}
-.button button {
-  background-color: #007ef3;
-  border: none;
-  color: white;
-  border-radius: 40px 40px 40px 40px;
-  padding: 5px 40px;
   font-family: "Nunito Sans", Sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 100px;
-  cursor: pointer;
 }
-.button button:hover {
-  color: #007ef3;
-  background-color: white;
-  border: 1px solid #007ef3;
-  font-weight: 500;
+
+#links a:hover {
+  color: #007EF3;
 }
-.button img {
-  cursor: pointer;
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#EBFAFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(75, 75, 75);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #007EF3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+  }
+}
+
+/* for tablet */
+@media (max-width: 854px){
+  #navbar{
+      padding: 0px 10px;
+      width: 100%;
+      grid-gap: 20px;
+  }
+  #links{
+      grid-gap: 0px;
+      align-items: baseline;;
+  }
+  #links a{
+      padding: 1em 1em 1em 1em;
+      font-size: 10px;
+  }
+  #logo img{
+      width:120px;
+      height: 30px;
+  }
+  .button button{
+      border-radius: 13px;
+      padding: 5px 8px;
+      font-size: 11px;
+      margin-left: 2px;
+  }
+
+}
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+
+
 /* ------ */
 
 /* first and third section of the become tutor page */
 
 .become-tutor-first-section {
-  margin: 5% 15% 5%;
+  margin: 5% 7% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +151,7 @@
 
 .become-tutor-first-section .left-side {
   width: 50%;
-  margin-right: 10%;
+  margin-right: 5%;
   box-sizing: border-box;
 }
 
@@ -122,10 +204,110 @@
   color: black;
 }
 
+
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1200px) {
+  .become-tutor-first-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .become-tutor-first-section .left-side .left-main-heading h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .become-tutor-first-section .left-side .left-sub-heading{
+    font-size: 30px;
+  }
+
+  .become-tutor-first-section .right-side img {
+    margin: 0;
+    width: 22rem;
+    height: 62vh;
+  }
+
+}
+@media screen and (max-width: 850px) {
+  .become-tutor-first-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .become-tutor-first-section .left-side {
+    margin: 0 1rem;
+  }
+
+  .become-tutor-first-section .left-side .left-main-heading {
+    font-size: 1.2rem;
+  }
+
+  .become-tutor-first-section .left-side .left-sub-heading{
+    font-size: 1.3rem;
+  }
+
+  .become-tutor-first-section .left-side .p{
+    font-size: 1rem;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .become-tutor-first-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .become-tutor-first-section .right-side {
+    order: 1;
+  }
+
+  .become-tutor-first-section .left-side {
+    margin: 0;
+    width: 80vw;
+    order: 2;
+  }
+
+  .become-tutor-first-section .left-side .left-main-heading {
+    font-size: 18px;
+  }
+
+  .become-tutor-first-section .left-side .left-sub-heading{
+    font-size: 18px;
+  }
+
+  .become-tutor-first-section .right-side img {
+    margin-left: 0%;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .register-button {
+    font-size: 15px;
+        padding: 5%;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+  }
+
+  
+}
+
+
+
+
+
 /* second and fourth section of the become tutor page */
 
 .second-section-become-tutor {
-  margin: 14% 15% 5%;
+  margin: 5% 7% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +329,6 @@
 
 .second-section-become-tutor .right-side p {
   font-size: 1.2em;
-  line-height: 1.5;
   margin-bottom: 20px;
   font-family: "Nunito Sans", Sans-serif;
   text-align: justify;
@@ -157,6 +338,108 @@
   font-weight: 900;
   font-size: larger;
 }
+
+
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1200px) {
+  .second-section-become-tutor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .second-section-become-tutor .right-side h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .second-section-become-tutor .right-side p{
+    font-size: 25px;
+  }
+
+  .second-section-become-tutor .left-side img {
+    margin: 0;
+    width: 22rem;
+    height: 62vh;
+  }
+
+}
+
+
+@media screen and (max-width: 850px) {
+  .second-section-become-tutor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .second-section-become-tutor .right-side{
+    width: 80vw;
+  }
+
+  .second-section-become-tutor .right-side {
+    margin: 0 1rem;
+  }
+
+  .second-section-become-tutor .right-side h1 {
+    font-size: 1.2rem;
+  }
+
+  .second-section-become-tutor .right-side .p{
+    font-size: 0.7rem;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .become-tutor-first-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .become-tutor-first-section .right-side {
+    order: 1;
+  }
+
+  .become-tutor-first-section .left-side {
+    margin: 0;
+    width: 80vw;
+    order: 2;
+  }
+
+  .become-tutor-first-section .left-side .left-main-heading {
+    font-size: 18px;
+  }
+
+  .become-tutor-first-section .left-side .left-sub-heading{
+    font-size: 18px;
+  }
+
+  .become-tutor-first-section .right-side img {
+    margin-left: 0%;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .register-button {
+    font-size: 15px;
+        padding: 5%;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+  }
+
+  
+}
+
+
+
+
 
 /* why with us section */
 
@@ -224,6 +507,8 @@
   top: 50%; /* to make it in same line and not upwards */
   transform: translateY(-50%); /* to make it in same line and not downwards */
 }
+
+
 
 /* enroll section */
 
@@ -432,98 +717,144 @@ footer {
   opacity: 1;
 }
 
+
+
+
 /* Media queries */
-@media screen and (max-width: 860px) {
+
+@media screen and (max-width: 1200px) {
   .footer-nav ul li a {
-    margin: 0;
-    font-size: 0.7rem;
+      margin: 0;
+      font-size: 0.8rem;
   }
 
   #copyright {
-    font-size: 0.7rem;
+      font-size: 0.7rem;
   }
 
   .footer-icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1%;
-    font-size: 0.7rem;
-    opacity: 0.3;
+      color: white;
+      text-decoration: none;
+      margin: 0 1%;
+      font-size: 0.9rem;
+      opacity: 0.3;
   }
 
-  /* hover for the footer section */
-  .footer-nav ul li a:hover {
-    color: white;
-    opacity: 1;
+  
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+color: white;
+opacity: 1;
+}
+
+
+.footer-icons a:hover {
+  color: white;
+  opacity: 1;
+}
+
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .footer-nav ul li a {
+      margin: 0;
+      font-size: 0.7rem;
   }
 
-  .footer-icons a:hover {
-    color: white;
-    opacity: 1;
+  #copyright {
+      font-size: 0.7rem;
   }
+
+  .footer-icons a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1%;
+      font-size: 0.7rem;
+      opacity: 0.3;
+  }
+
+  
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+color: white;
+opacity: 1;
+}
+
+
+.footer-icons a:hover {
+  color: white;
+  opacity: 1;
+}
+
 }
 
 @media screen and (max-width: 450px) {
-  .footer-nav {
-    padding: 0;
+  .footer-nav{
+      padding: 0;
   }
 
   .footer-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      flex-direction: column;
   }
 
-  .footer-nav ul li {
-    margin-left: -9%;
+  .footer-nav ul li{
+      margin-left: -9%;
   }
 
   .footer-nav ul li a {
-    order: 1; /* Order list items to be at the top */
-    padding: 0;
-    font-size: 0.6rem;
+      order: 1; /* Order list items to be at the top */
+      padding: 0;
+      font-size: 0.6rem;
   }
 
   hr {
-    display: none;
+      display: none;
   }
 
   .footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    order: 2;
-    margin-top: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 2;
+      margin-top: 2%;
   }
 
   .footer-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.6rem;
-    opacity: 0.3;
+      color: white;
+      text-decoration: none;
+      font-size: 0.6rem;
+      opacity: 0.3;
   }
 
   #copyright {
-    order: 3;
-    margin-left: 25%;
-    /* bottom: 0; */
-    width: 80%;
-    font-size: 0.6rem;
-    margin-top: 10px;
+      order: 3;
+      margin-left: 25%;
+      /* bottom: 0; */
+      width: 80%;
+      font-size: 0.6rem;
+      margin-top: 10px;
   }
 
-  /* hover for the footer section */
-  .footer-nav ul li a:hover {
-    color: white;
-    opacity: 1;
-  }
-
-  .footer-icons a:hover {
-    color: white;
-    opacity: 1;
-  }
+  
+/* hover for the footer section */
+.footer-nav ul li a:hover{
+color: white;
+opacity: 1;
 }
+
+
+.footer-icons a:hover {
+  color: white;
+  opacity: 1;
+}
+
+}
+
 
 /* footer section ends */
