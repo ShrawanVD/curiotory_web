@@ -102,6 +102,25 @@ a {
 }
 
 /* for tablet */
+@media (max-width: 1200px){
+  #navbar{
+      grid-gap: 20px;
+      padding: 0px 20px;
+  }
+  .button{
+      text-align: center;
+  }
+  .button button{
+      padding: 4px 20px;
+      font-size: 12px;
+      margin-left: 0px;
+  }
+  #links{
+      margin-left: 20px;
+      grid-gap: 18px;
+      align-items: baseline;
+  }
+}
 @media (max-width: 854px){
   #navbar{
       padding: 0px 10px;
