@@ -280,9 +280,9 @@
     background-color: #EBFAFF;
     grid-gap: 1.5em;
     padding: 0 40px;
-    -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    /* -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
     -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1); */
   }
   
   #logo {
@@ -369,30 +369,19 @@
     #logo {
       display: inline-grid;
       grid-template-columns: auto auto;
-      grid-gap: 70px;
+      grid-gap: 2rem;
+      align-items: center;
+    }
+  }
+  
+  
+  /* Tablet to Desktop */
+  @media (min-width: 768px) {
+    .mobile-btn {
+      display: none;
     }
   }
 
-  /* for tablet */
-  @media (max-width: 1200px){
-    #navbar{
-        grid-gap: 20px;
-        padding: 0px 20px;
-    }
-    .button{
-        text-align: center;
-    }
-    .button button{
-        padding: 4px 20px;
-        font-size: 12px;
-        margin-left: 0px;
-    }
-    #links{
-        margin-left: 20px;
-        grid-gap: 18px;
-        align-items: center;
-    }
-  }
   @media (max-width: 854px){
     #navbar{
         padding: 0px 10px;
@@ -417,19 +406,103 @@
         font-size: 11px;
         margin-left: 2px;
     }
-
 }
-  
-  /* Tablet to Desktop */
-  @media (min-width: 768px) {
-    .mobile-btn {
-      display: none;
+
+  @media screen and (min-width:855px) and (max-width: 990px){
+    #navbar{
+        padding: 0px 10px;
+        width: 100%;
+        /* grid-gap: 20px; */
+    }
+    .reverse img{
+        width: 7rem;
+        height: 2rem;
+    }
+    #links{
+        grid-gap: 1rem;
+        align-items: center;;
+    }
+    #links a{
+        font-size: 0.8rem;
+    }
+    .button button{
+        padding: 0.2rem 0.7rem;
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    #playstore-img{
+        width: 3.2rem;
+        height: 2.8rem;
     }
   }
 
-  
 
+  @media screen and (min-width:991px) and (max-width: 1200px){
+    #navbar{
+        padding: 10px 20px;
+    }
+    .reverse img{
+        width: 7rem;
+        height: 2.3rem;
+    }
+    #links{
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 0.8rem;
+    }
+    .button button{
+        padding: 0.2rem 1.2rem;
+        margin-left: 0rem;
+    }
+    #playstore-img{
+        width: 3.7rem;
+        height: 3rem;
+    }
+  }
 
+  /* for 4k view */
+  @media screen and (min-width:1200px) and (max-width: 1800px){
+    #navbar{
+        padding: 20px 30px;
+    }
+    .reverse img{
+        width: 10rem;
+        height: 3rem;
+    }
+    #links{
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 1rem;
+    }
+    .button button{
+        padding: 0.4rem 1.5rem;
+        margin-left: 0rem;
+    }
+  }
+  @media screen and (min-width:1801px) and (max-width: 2600px){
+    #navbar{
+        padding: 1rem 2rem;
+    }
+    .reverse img{
+        width: 14vw;
+        height: 6vh;
+    }
+    #links{
+        grid-gap: 2.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 1.5rem;
+    }
+    .button button{
+        padding: 0.6rem 2rem;
+        margin-left: 0;
+    }
+  }
 
 
 
