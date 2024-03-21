@@ -100,15 +100,15 @@
       </div>
       <div class="form-section">
         <form
-          method="post"
+          method="POST"
           action="https://backendapi-ay7s.onrender.com/sendMsg"
         >
           <label for="sender_name">Your Name</label><br />
-          <input type="text" name="fname" autocomplete="name" /><br />
+          <input type="text" name="fname" autocomplete="name" required/><br />
           <label for="sender_email">Your Email</label><br />
-          <input type="email" name="email" autocomplete="email" /><br />
+          <input type="email" name="email" autocomplete="email" required /><br />
           <label for="sender_msg">Your Message</label><br />
-          <textarea name="msg" autocomplete="msg"></textarea><br />
+          <textarea name="msg" autocomplete="msg" required></textarea><br />
           <button type="submit">Submit</button>
         </form>
       </div>

@@ -291,3 +291,26 @@
       font-size: 1.1rem;
   }
   
+
+
+  /* responsive page css */
+@media screen and (max-width: 580px){
+  .policy-content{
+    padding: 0rem 2rem;
+  }
+  .policy-header h2{
+    font-size: 2rem;
+  }
+  .policy-content h5{
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 385px){
+  .policy-header h2{
+    font-size: 1.8rem;
+  }
+  .policy-content h5{
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
