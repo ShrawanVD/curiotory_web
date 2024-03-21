@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- bootstrap -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- footer icons -->
+  <!-- bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+ <!-- Bootstrap css link -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- footer icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
   <!-- swiper bundle -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
   <link rel="stylesheet" href="css/style.css" />
@@ -29,67 +27,95 @@
 
 <body>
 
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+     <!-- try navbar responsive code -->
+     <nav>
+       <div id="navbar">
+         <div id="logo" class="reverse">
+           <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">&#9776;</div>
+           <!-- <div class="logo">Gr<span>id</span> CSS</div> -->
+           <a href="#"><img width="178px" height="44px" src="./images/Index/0 - logo.png" class="logo" /></a>
+         </div>
+         <div id="links">
+          <a href="./html/platform.html">Platform</a>
+          <a href="#">Language Solution</a>
+          <a href="#">Resources</a>
+          <a href="./html/meetTheTutor.html">Meet the Tutors</a>
+          <a href="./html/aboutUs.html">About Us</a>
+          <a href="./html/contactus.html">Contact Us</a>
+           <div class="button">
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"><button
+                 id="nav-button">Register for our<br> FREE Demo</button></a>
+           </div>
+           <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"><img width="61px"
+               height="58px" id="playstore-img" src="./images/Index/0 - playstore.png" /></a>
+         </div>
+       </div>
+   
+     </nav>
+     <!-- Mobile Menu -->
+     <div id="mySidenav" class="sidenav">
+       <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="./html/platform.html">Platform</a>
+       <a href="#">Language Solution</a>
+       <a href="#">Resources</a>
+       <a href="./html/meetTheTutor.html">Meet the Tutors</a>
+       <a href="./html/aboutUs.html">About Us</a>
+       <a href="./html/contactus.html">Contact Us</a>
+     </div>
+   
 
 
 
-<!-- ------ why foreign lang centers.... section -->
+  <!-- ------ why foreign lang centers.... section -->
 
-        <div class="foreign-lang-section">
-          <div class="foreign-lang-section-heading">
-            <h1>Why foreign language centres are not suitable?</h1>
-          </div>
-          <div class="foreign-lang-container">
-            <div class="foreign-lang-left-container">
-              <h4>
-                Learning foreign languages is a no-brainer. It empowers
-                individuals of all ages, personally and professionally, to
-                maximize their potential for success on the path they choose.
-              </h4>
-              <br />
-              <p>
-                However, like any life-changing skill, learning new languages is a
-                journey that demands proper guidance and expertise. Else, you’ll
-                face barriers that can stop you dead in your tracks. These
-                include:
-              </p>
-            </div>
-            <div class="foreign-lang-right-container">
-              <div class="foreign-lang-sub-contianer">
-                <img
-                  width="140px"
-                  height="83px"
-                  src="./images/Index/why foreign - 1.png"
-                />
-                <p>
-                  Generic, one-size-fits-all curriculum instead of personalized
-                  courses
-                </p>
-              </div>
-              <div class="foreign-lang-sub-contianer">
-                <img
-                  width="140px"
-                  height="83px"
-                  src="./images/Index/why foreign - 2.png"
-                />
-                <p>
-                  Rigid learning assessment by tutors with limited proficiency &
-                  low experience levels
-                </p>
-              </div>
-              <div class="foreign-lang-sub-contianer">
-                <img
-                  width="140px"
-                  height="83px"
-                  src="./images/Index/why foreign - 3.png"
-                />
-                <p>
-                  Outdated remote technology set-ups that cause learning delays &
-                  disruptions
-                </p>
-              </div>
-            </div>
-          </div>
+  <div class="foreign-lang-section">
+    <div class="foreign-lang-section-heading">
+      <h1>Why foreign language centres are not suitable?</h1>
+    </div>
+    <div class="foreign-lang-container">
+      <div class="foreign-lang-left-container">
+        <h4>
+          Learning foreign languages is a no-brainer. It empowers
+          individuals of all ages, personally and professionally, to
+          maximize their potential for success on the path they choose.
+        </h4>
+        <br />
+        <p>
+          However, like any life-changing skill, learning new languages is a
+          journey that demands proper guidance and expertise. Else, you’ll
+          face barriers that can stop you dead in your tracks. These
+          include:
+        </p>
+      </div>
+      <div class="foreign-lang-right-container">
+        <div class="foreign-lang-sub-contianer">
+          <img width="140px" height="83px" src="./images/Index/why foreign - 1.png" />
+          <p>
+            Generic, one-size-fits-all curriculum instead of personalized
+            courses
+          </p>
         </div>
+        <div class="foreign-lang-sub-contianer">
+          <img width="140px" height="83px" src="./images/Index/why foreign - 2.png" />
+          <p>
+            Rigid learning assessment by tutors with limited proficiency &
+            low experience levels
+          </p>
+        </div>
+        <div class="foreign-lang-sub-contianer">
+          <img width="140px" height="83px" src="./images/Index/why foreign - 3.png" />
+          <p>
+            Outdated remote technology set-ups that cause learning delays &
+            disruptions
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- why we stand out -->
@@ -99,11 +125,7 @@
         <h1>Why we stand out</h1>
       </div>
       <div class="stand-out-images">
-        <img
-          width="274px"
-          height="446px"
-          src="./images/Index/why we stand out section.png"
-        />
+        <img width="274px" height="446px" src="./images/Index/why we stand out section.png" />
       </div>
     </div>
     <div class="stand-out-right-section">
@@ -184,55 +206,53 @@
 
 
 
-<!-- 11 foreign language section -->
-<div class="various-lang">
-  <div class="foreign-lang-border">
-    <div class="foreign-lang">
-      <h1>
-        11 <span style="color: #ff7439">foreign language</span> learning
-        courses for unlocking attractive opportunities.
-      </h1>
-    </div>
-    <div class="foreign-lang-content">
-      <div class="foreign-lang-content-para">
-        <p>
-          However, like any life-changing skill, learning new languages is
-          a journey that demands proper guidance and expertise. Curiotory
-          can provide the ideal platform for learning languages the right
-          way.
-        </p>
+  <!-- 11 foreign language section -->
+  <div class="various-lang">
+    <div class="foreign-lang-border">
+      <div class="foreign-lang">
+        <h1>
+          11 <span style="color: #ff7439">foreign language</span> learning
+          courses for unlocking attractive opportunities.
+        </h1>
       </div>
-      <div class="european-lang-section">
-        <div class="european-lang-left-part">
-          <h2>European <span style="color: #2f327d">Languages</span></h2>
+      <div class="foreign-lang-content">
+        <div class="foreign-lang-content-para">
+          <p>
+            However, like any life-changing skill, learning new languages is
+            a journey that demands proper guidance and expertise. Curiotory
+            can provide the ideal platform for learning languages the right
+            way.
+          </p>
         </div>
-        <div class="european-lang-right-part">
-          <a id="afterbutton"
-            ><button class="lang-button">French</button></a
-          >
-          <button class="lang-button">German</button>
-          <button class="lang-button">Dutch</button>
-          <button class="lang-button">Russian</button>
-          <button class="lang-button">Spanish</button>
-          <button class="lang-button">English</button>
-          <button class="lang-button">Protugese</button>
+        <div class="european-lang-section">
+          <div class="european-lang-left-part">
+            <h2>European <span style="color: #2f327d">Languages</span></h2>
+          </div>
+          <div class="european-lang-right-part">
+            <a id="afterbutton"><button class="lang-button">French</button></a>
+            <button class="lang-button">German</button>
+            <button class="lang-button">Dutch</button>
+            <button class="lang-button">Russian</button>
+            <button class="lang-button">Spanish</button>
+            <button class="lang-button">English</button>
+            <button class="lang-button">Protugese</button>
+          </div>
         </div>
-      </div>
-      <div class="asian-lang-section">
-        <div class="asian-lang-left-part">
-          <h2>Asian <span style="color: #2f327d">Languages</span></h2>
-        </div>
-        <div class="asian-lang-right-part">
-          <button class="lang-button">Mandarin</button>
-          <button class="lang-button">Korean</button>
-          <button class="lang-button">Arabic</button>
-          <button class="lang-button">Japanese</button>
+        <div class="asian-lang-section">
+          <div class="asian-lang-left-part">
+            <h2>Asian <span style="color: #2f327d">Languages</span></h2>
+          </div>
+          <div class="asian-lang-right-part">
+            <button class="lang-button">Mandarin</button>
+            <button class="lang-button">Korean</button>
+            <button class="lang-button">Arabic</button>
+            <button class="lang-button">Japanese</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
 
 
 
@@ -247,7 +267,7 @@
       <div class="heading">
         <h1>
           Fuel your global
-          dreams by 
+          dreams by
           learning foreign
           languages
         </h1>
@@ -264,12 +284,9 @@
         </ul>
       </div>
 
-      <a
-        class="register-button"
-        target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
-        >Register as a teacher</a
-      >
+      <a class="register-button" target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform">Register
+        as a teacher</a>
     </div>
 
     <div class="right-side">
@@ -280,92 +297,89 @@
 
 
 
-<!-- REVIEWS SECTION -->
+  <!-- REVIEWS SECTION -->
 
-<div class="review-heading">
-  <h1>Why people learn with us!</h1>
-</div>
+  <div class="review-heading">
+    <h1>Why people learn with us!</h1>
+  </div>
 
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="profile-picture">
-        <img src="./images/Index/review - reeva.png" alt="Reeva Arsingha" />
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="profile-picture">
+          <img src="./images/Index/review - reeva.png" alt="Reeva Arsingha" />
+        </div>
+        <div class="name">Reeva Arsinghakar</div>
+        <div class="designation">Spanish B1 - Akola Maharashtra</div>
+        <div class="reviews">
+          <p>
+            “Firstly, it was a lot of fun to learn with Curiotory. The
+            teaching process was perfect, and the tutor ensured I was
+            thoroughly engaged. So I enjoyed it a lot! Their material helped
+            me a lot too. Moreover, the platform is very organized and
+            systematic. It was overall a great learning experience.”
+          </p>
+        </div>
       </div>
-      <div class="name">Reeva Arsinghakar</div>
-      <div class="designation">Spanish B1 - Akola Maharashtra</div>
-      <div class="reviews">
-        <p>
-          “Firstly, it was a lot of fun to learn with Curiotory. The
-          teaching process was perfect, and the tutor ensured I was
-          thoroughly engaged. So I enjoyed it a lot! Their material helped
-          me a lot too. Moreover, the platform is very organized and
-          systematic. It was overall a great learning experience.”
-        </p>
-      </div>
-    </div>
 
-    <div class="swiper-slide">
-      <div class="profile-picture">
-        <img src="./images/Index/review - riya.png" alt="Riya Malhotra" />
+      <div class="swiper-slide">
+        <div class="profile-picture">
+          <img src="./images/Index/review - riya.png" alt="Riya Malhotra" />
+        </div>
+        <div class="name">Riya Malhotra</div>
+        <div class="designation">German A1 - Germany</div>
+        <div class="reviews">
+          <p>
+            “The German course was very good. I also found it very convenient
+            as I could attend the course per my schedule. As I am studying
+            medicine in Germany my language knowledge came handy. My tutor,
+            Disha, was kind enough to make adjustments many times so that I
+            could easily recover whenever I missed a session. I am definitely
+            satisfied!”
+          </p>
+        </div>
       </div>
-      <div class="name">Riya Malhotra</div>
-      <div class="designation">German A1 - Germany</div>
-      <div class="reviews">
-        <p>
-          “The German course was very good. I also found it very convenient
-          as I could attend the course per my schedule. As I am studying
-          medicine in Germany my language knowledge came handy. My tutor,
-          Disha, was kind enough to make adjustments many times so that I
-          could easily recover whenever I missed a session. I am definitely
-          satisfied!”
-        </p>
-      </div>
-    </div>
 
-    <div class="swiper-slide">
-      <div class="profile-picture">
-        <img
-          src="./images/Index/review - bhavana.png"
-          alt="Bhawana Pawar HR"
-        />
+      <div class="swiper-slide">
+        <div class="profile-picture">
+          <img src="./images/Index/review - bhavana.png" alt="Bhawana Pawar HR" />
+        </div>
+        <div class="name">Bhawana Pawar HR</div>
+        <div class="designation">
+          Jabil Manufacturing Pvt. Ltd. - Mandarin (Ranjangaon, Maharashtra)
+        </div>
+        <div class="reviews">
+          <p>
+            “We are happy to receive Curiotory language service, as our teams
+            gained a lot of knowledge. It went a long way to help improve
+            their efficiency at work . We hope to work again with Curiotory in
+            future &nbsp;.”
+          </p>
+        </div>
       </div>
-      <div class="name">Bhawana Pawar HR</div>
-      <div class="designation">
-        Jabil Manufacturing Pvt. Ltd. - Mandarin (Ranjangaon, Maharashtra)
-      </div>
-      <div class="reviews">
-        <p>
-          “We are happy to receive Curiotory language service, as our teams
-          gained a lot of knowledge. It went a long way to help improve
-          their efficiency at work . We hope to work again with Curiotory in
-          future &nbsp;.”
-        </p>
-      </div>
-    </div>
 
-    <div class="swiper-slide">
-      <div class="profile-picture">
-        <img src="./images/Index/review - swapna.png" alt="Swapna Jain" />
-      </div>
-      <div class="name">Swapna Jain</div>
-      <div class="designation">
-        Korean TOPIK 1 Level 1 - Brewer – Maine, US
-      </div>
-      <div class="reviews">
-        <p>
-          "Being part of a big organization, one of my 2023 goals was to
-          learn a foreign language. So, I got to learn from Priya Nagpal, my
-          Korean tutor at Curiotory. And what an experience it has been! I
-          like everything about the course.I would recommend Curiotory and
-          Priya Nagpal to everyone!”
-        </p>
+      <div class="swiper-slide">
+        <div class="profile-picture">
+          <img src="./images/Index/review - swapna.png" alt="Swapna Jain" />
+        </div>
+        <div class="name">Swapna Jain</div>
+        <div class="designation">
+          Korean TOPIK 1 Level 1 - Brewer – Maine, US
+        </div>
+        <div class="reviews">
+          <p>
+            "Being part of a big organization, one of my 2023 goals was to
+            learn a foreign language. So, I got to learn from Priya Nagpal, my
+            Korean tutor at Curiotory. And what an experience it has been! I
+            like everything about the course.I would recommend Curiotory and
+            Priya Nagpal to everyone!”
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- REVIEWS SECTION ENDS -->
+  <!-- REVIEWS SECTION ENDS -->
 
 
 
@@ -385,12 +399,7 @@
           <p>When is the best age to start learning foreign languages?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -414,12 +423,7 @@
           </p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -442,12 +446,7 @@
           <p>But why can’t I just learn foreign languages by myself?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -471,12 +470,7 @@
           <p>Does Curiotory cover critical language skills?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -496,12 +490,7 @@
           <p>How does Curiotory select language teachers?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -522,12 +511,7 @@
           </p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -545,12 +529,7 @@
           <p>What is the most effective way to attend a session?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -568,12 +547,7 @@
           <p>Do you issue a certificate at the end of the course?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <g>
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="0.5"
-                stroke-linecap="round"
-              />
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -590,12 +564,7 @@
         <div class="question" style="color: #002e5b">
           <p>What is the easiest way to contact Curiotory?</p>
           <svg width="15" height="10" viewBox="0 0 42 25">
-            <path
-              d="M3 3L21 21L39 3"
-              stroke="white"
-              stroke-width="0.5"
-              stroke-linecap="round"
-            />
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0.5" stroke-linecap="round" />
           </svg>
         </div>
 
@@ -624,100 +593,103 @@
 
 
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="text-center text-white" style="background-color: #3f51b5; bottom: 0;">
-  <div class="container">
-    <section >
-      <div class="row text-center d-flex justify-content-center pt-5">
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="html/meetTheTutor.html" class="text-white">Meet our Tutors</a>
-          </h6>
+  <footer class="text-center text-white" style="background-color: #3f51b5; bottom: 0;">
+    <div class="container">
+      <section>
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="html/meetTheTutor.html" class="text-white">Meet our Tutors</a>
+            </h6>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="html/becomeTutor.html" class="text-white">Become a tutor</a>
+            </h6>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./html/privacyPolicy.html" class="text-white">Privacy Policy</a>
+            </h6>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./html/refundPolicy.html" class="text-white">Refund Policy & NDNC</a>
+            </h6>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="./html/termsCondition.html" class="text-white">Terms and Conditions</a>
+            </h6>
+          </div>
         </div>
-
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="html/becomeTutor.html" class="text-white">Become a tutor</a>
-          </h6>
-        </div>
-
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Privacy Policy</a>
-          </h6>
-        </div>
-
-        <div class="col-md-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Refund Policy & NDNC</a>
-          </h6>
-        </div>
-
-        <div class="col-md-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Terms and Conditions</a>
-          </h6>
-        </div>
-      </div>
-    </section>
+      </section>
 
 
-    <hr class="my-3" />
+      <hr class="my-3" />
 
 
-    <!-- Icons -->
-    <section class="text-center mb-4">
-      <a href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in" class="text-white me-4 mr-3" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.facebook.com/Curiotory/" class="text-white me-4 mr-3" target="_blank">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&query=16A%2C%202nd%20floor%2C%20Curiotory%2C%20Downtown%20City%20Vista%2C%20Curiotory%2C%20Building%20A%20Office%20no%2C%20Fountain%20Road%2C%20Rakshak%20Nagar%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014" class="text-white me-4 mr-3" target="_blank">
-        <i class="fas fa-map-marker-alt"></i>
-      </a>
-      <a href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg" class="text-white me-4 mr-3" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://www.instagram.com/curiotory_/" class="text-white me-4" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </section>
-  </div>
+      <!-- Icons -->
+      <section class="text-center mb-4">
+        <a href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in" class="text-white me-4 mr-3"
+          target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/Curiotory/" class="text-white me-4 mr-3" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=16A%2C%202nd%20floor%2C%20Curiotory%2C%20Downtown%20City%20Vista%2C%20Curiotory%2C%20Building%20A%20Office%20no%2C%20Fountain%20Road%2C%20Rakshak%20Nagar%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014"
+          class="text-white me-4 mr-3" target="_blank">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg" class="text-white me-4 mr-3" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/curiotory_/" class="text-white me-4" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </section>
+    </div>
 
-  <!-- Copyright -->
-  <div
-       class="text-center p-3"
-       style="background-color: rgba(0, 0, 0, 0.2)"
-       >
-       @2024 Chalkboard Academy Private Limited
-  </div>
-</footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      @2024 Chalkboard Academy Private Limited
+    </div>
+  </footer>
 
-    <!-- FOOTER SECTION ENDS -->
+  <!-- FOOTER SECTION ENDS -->
 
 
 
 
 
-    <!-- -------------------- Javascript Files ---------------------- -->
+  <!-- -------------------- Javascript Files ---------------------- -->
+
+  <script src="./js/script.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- faq js -->
+  <script src="js/faq.js"></script>
+
+
+  <!-- javascript files for swiper used in reviews section -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 
 
 
-    <!-- bootstrap js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-    <!-- faq js -->
-    <script src="js/faq.js"></script>
 
+</body>
 
-    <!-- javascript files for swiper used in reviews section -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-    <script src="js/script.js"></script>
-
-  </body>
 </html>
