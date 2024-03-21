@@ -280,10 +280,10 @@ a {
   padding: 5rem 3rem 2rem;
 }
 
-.container {
+/* .container {
   display: flex;
   padding: 20px 0px;
-}
+} */
 
 .left-section {
   flex: 1;
@@ -403,9 +403,9 @@ img {
 .teacher-info-container{
   width: 100%;
 }
-.container{
-  justify-content: space-evenly;
-}
+/* .container{
+  justify-content: space-around;
+} */
 .profile-img {
   height: 15rem;
   width: 24rem;
@@ -479,8 +479,12 @@ img {
   .photo-data{
     display: flex;
     flex-direction: column;
+    
   }
   .profile-info{
     margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
   }
 } 

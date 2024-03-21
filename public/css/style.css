@@ -792,7 +792,7 @@ display: none;
 
     .cards img{
         width: 17vw;
-        height: 19vh;
+        height: 22vh;
     }
 
     .cards h4{
@@ -1020,7 +1020,7 @@ display: none;
         padding: 2rem 0rem;
     }
     .learn-foriegn-lang-heading{
-        margin-top: -9%;
+        margin-top: -6%;
         margin-bottom: 4rem;
     }
     .learn-foriegn-lang-heading h1{
@@ -2047,7 +2047,7 @@ display: none;
     }
 
     .get-started .right-side img{
-        width: 40vw;
+        width: 35vw;
         height: 25vh;
     }
 
