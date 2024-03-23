@@ -1,0 +1,635 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+    background: #fbfbfb;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color:#777;
+  }
+  h1,h4{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .row{
+    padding:50px 0;
+  }
+  .seperator{
+    margin-bottom: 30px;
+    width:35px;
+    height:3px;
+    background:#777;
+    border:none;
+  }
+  .title{
+    text-align: center;
+    
+    .row{
+      padding: 50px 0 0;
+    }
+    
+    h1{
+      text-transform: uppercase;
+    }
+    
+    .seperator{
+      margin: 0 auto 10px;
+    }
+  }
+  .item {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 1px;
+    float: left;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    .item-in {
+      background: #fff;
+      padding: 40px;
+      position: relative;
+      
+      &:hover:before {
+        width: 100%;
+      }
+     
+      &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      height: 2px;
+      width: 0%;
+      background: #007EF3;
+      right: 0px;
+      -webkit-transition: width 0.4s;
+      transition: width 0.4s;
+      }
+    }
+  }
+  .item{
+      
+    h4{
+        font-size: 18px;
+        margin-top: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 12px;
+      }
+      a{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #666666;
+        margin-top: 10px;
+  
+        i {
+          opacity: 0;
+          padding-left: 0px;
+          transition: 0.4s;
+          font-size: 24px;
+          display: inline-block;
+          top: 5px;
+          position: relative;
+         }
+        }
+      }
+  .item .icon {
+    position:absolute;
+    top: 27px;
+    left: -16px;
+    cursor:pointer;
+      a{
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        font-weight:400;
+        color: #999;
+        text-transform:none;
+      }
+      svg{
+        width:32px;
+        height:32px;
+        float:left;
+      }
+      .icon-topic{
+        opacity: 0;
+        padding-left: 0px;
+        transition: 0.4s;
+        display: inline-block;
+        top: 0px;
+        position: relative;
+      }
+      &:hover .icon-topic{
+        opacity: 1;
+        padding-left: 10px;
+      }
+    }
+  @media only screen and (max-width : 768px) {
+    .item .icon{position: relative; top: 0; left:0;}
+  }
+
+
+
+
+
+/* navbar */
+
+.button {
+    align-content: center;
+    align-items: center;
+  }
+  
+  .button button {
+    background-color: #007EF3;
+    border: none;
+    color: white;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px 40px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  
+  .button button:hover {
+    color: #007EF3;
+    background-color: white;
+    border: 1px solid #007EF3;
+  }
+  
+  .button img {
+    cursor: pointer;
+  }
+  
+  
+  /* try nav code  */
+    
+  #navbar {
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    background-color: #f3fbfd;
+    grid-gap: 1.5em;
+    padding: 0 40px;
+  }
+  
+  #logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  #links {
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  #links a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  #links a:hover {
+    color: #007EF3;
+  }
+  
+  /* =======================
+  ******* Mobile Menu ******
+  ========================*/
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#EBFAFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(75, 75, 75);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #007EF3;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  a {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Mobile to Tablet  */
+  @media (min-width: 320px) and (max-width: 767px) {
+    #links,
+    .mobile-menu {
+      display: none;
+    }
+    #logo {
+      display: inline-grid;
+      grid-template-columns: auto auto;
+      grid-gap: 2rem;
+      align-items: center;
+    }
+  }
+  
+  
+  /* Tablet to Desktop */
+  @media (min-width: 768px) {
+    .mobile-btn {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 854px){
+    #navbar{
+        padding: 0px 10px;
+        width: 100%;
+        grid-gap: 20px;
+    }
+    #links{
+        grid-gap: 0px;
+        align-items: baseline;;
+    }
+    #links a{
+        padding: 1em 1em 1em 1em;
+        font-size: 10px;
+    }
+    #logo img{
+        width:120px;
+        height: 30px;
+    }
+    .button button{
+        border-radius: 13px;
+        padding: 5px 8px;
+        font-size: 11px;
+        margin-left: 2px;
+    }
+  }
+  
+  @media screen and (min-width:855px) and (max-width: 990px){
+    #navbar{
+        padding: 0px 10px;
+        width: 100%;
+        /* grid-gap: 20px; */
+    }
+    .reverse img{
+        width: 7rem;
+        height: 2rem;
+    }
+    #links{
+        grid-gap: 1rem;
+        align-items: center;;
+    }
+    #links a{
+        font-size: 0.8rem;
+    }
+    .button button{
+        padding: 0.2rem 0.7rem;
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    #playstore-img{
+        width: 3.2rem;
+        height: 2.8rem;
+    }
+  }
+  
+  
+  @media screen and (min-width:991px) and (max-width: 1200px){
+    #navbar{
+        padding: 10px 20px;
+    }
+    .reverse img{
+        width: 7rem;
+        height: 2.3rem;
+    }
+    #links{
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 0.8rem;
+    }
+    .button button{
+        padding: 0.2rem 1.2rem;
+        margin-left: 0rem;
+    }
+    #playstore-img{
+        width: 3.7rem;
+        height: 3rem;
+    }
+  }
+  
+  /* for 4k view */
+  @media screen and (min-width:1200px) and (max-width: 1800px){
+    #navbar{
+        padding: 20px 30px;
+    }
+    .reverse img{
+        width: 10rem;
+        height: 3rem;
+    }
+    #links{
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 1rem;
+    }
+    .button button{
+        padding: 0.4rem 1.5rem;
+        margin-left: 0rem;
+    }
+  }
+  @media screen and (min-width:1801px) and (max-width: 2600px){
+    #navbar{
+        padding: 1rem 2rem;
+    }
+    .reverse img{
+        width: 14vw;
+        height: 6vh;
+    }
+    #links{
+        grid-gap: 2.5rem;
+        align-items: center;
+    }
+    #links a{
+        font-size: 1.5rem;
+    }
+    .button button{
+        padding: 0.6rem 2rem;
+        margin-left: 0;
+    }
+  }
+  
+  
+  /* ------ */
+
+
+
+/* faq section */
+
+.faq-heading{
+	font-family: "Nunito Sans", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 4%;
+}
+
+.body-faq{
+    margin: 5% 10% 10%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.layout {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.faq {
+	padding: 10px 10px 2px;
+	border-radius: 0.4em;
+	border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+
+.question{
+	display: flex;
+	justify-content: space-between;
+}
+
+.question p {
+	font-family: "Poppins", Sans-serif;
+	font-size: 1.15em;
+    font-weight: 700;
+}
+
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.8s ease-in-out;
+	margin-top: 2%;
+}
+
+.answer p {
+	margin: 5px;
+	font-size: 1em;
+	border-radius: 10px;
+
+    font-family: "Poppins", Sans-serif;
+    font-weight: 540;
+    /* line-height: 25.5px; */
+}
+
+.faq:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.faq.active .answer {
+	max-height: 30vh;
+}
+
+.faq.active svg{
+	transition: 0.5s ease;
+	transform: rotate(180deg);
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 990px) {
+
+    .body-faq{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+
+    .image-container img{
+        height: 30vw;
+    }
+
+    .layout {
+        width: 60vw;
+        /* margin: auto;
+        display: flex;
+        flex-direction: column; */
+    }
+    .faq-heading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .body-faq{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+
+    .image-container img{
+        height: 30vw;
+    }
+
+    .layout {
+        width: 50vw;
+        /* margin: auto;
+        display: flex;
+        flex-direction: column; */
+    }
+
+    .faq-heading{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .body-faq{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+
+    .image-container img{
+        height: 20vw;
+    }
+
+    .layout {
+        width: 50vw;
+        
+    }
+    .faq-heading{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .body-faq{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .layout {
+        width: 80vw;
+        /* margin: auto;
+        display: flex;
+        flex-direction: column; */
+    }
+    .faq-heading{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 535px) {
+
+    .faq-heading{
+        font-size: 1.5rem;
+    }
+    .question p {
+        font-size: 1.15em;
+        font-weight: 700;
+    }
+    
+    .answer p {
+        font-size: 1em;
+        font-weight: 540;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .faq-heading{
+        font-size: 1.3rem;
+    }
+    .question p {
+        font-size: 1.15em;
+        font-weight: 700;
+    }
+    
+    .answer p {
+        font-size: 1em;
+        font-weight: 540;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .faq-heading{
+        font-size: 1.1rem;
+    }
+    .question p {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    
+    .answer p {
+        font-size: 0.75em;
+        font-weight: 540;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .faq-heading{
+        font-size: 0.9rem;
+    }
+    .question p {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    .answer p {
+        font-size: 0.7em;
+        font-weight: 540;
+    }
+}
+
+
+/* faq section ends */
