@@ -922,7 +922,7 @@ display: none;
 /* learn foreign language section starts */
 .learn-foriegn-lang-section{
     background-color: white;
-    padding: 2rem 0rem;
+    padding: 2rem 3rem;
 }
 .learn-foriegn-lang{
     background-color: white;
@@ -1168,7 +1168,7 @@ display: none;
 
 .foreign-lang-section{
     background-color: white;
-    padding: 5rem 7rem;
+    padding: 5rem 9rem;
 }
 .foreign-lang-section-heading{
     align-items: center;
@@ -1523,7 +1523,7 @@ display: none;
 
 /* 11 foreign language section */
 .various-lang{
-    padding: 2rem 0rem;
+    padding: 2rem 2rem;
 }
 .foreign-lang{
     text-align: center;
@@ -2022,7 +2022,7 @@ display: none;
     }
     .get-started .right-side img{
         width: 30vw;
-        height: 30vh;
+        height: 35vh;
     }
 }
 
