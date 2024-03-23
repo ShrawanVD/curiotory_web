@@ -971,7 +971,12 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-
+// alert
+function showAlert() {
+  alert('Form Sumitted Successfully');
+  window.location.reload();
+  return false; // Prevents the default form submit action
+}
 
 
 

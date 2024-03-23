@@ -102,6 +102,7 @@
         <form
           method="POST"
           action="https://backendapi-ay7s.onrender.com/sendMsg"
+          onsubmit="return showAlert()"
         >
           <label for="sender_name">Your Name</label><br />
           <input type="text" name="fname" autocomplete="name" required/><br />
@@ -109,7 +110,7 @@
           <input type="email" name="email" autocomplete="email" required /><br />
           <label for="sender_msg">Your Message</label><br />
           <textarea name="msg" autocomplete="msg" required></textarea><br />
-          <button type="submit">Submit</button>
+          <button type="submit" >Submit</button>
         </form>
       </div>
     </div>
