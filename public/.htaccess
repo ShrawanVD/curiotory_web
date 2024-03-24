@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^html/meetTheTutor\.html$ /meetTheTutor [R=301,L]
