@@ -1,319 +1,319 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  align-content: center;
+  align-items: center;
+}
+
+.button button {
+  background-color: #007ef3;
+  border: none;
+  color: white;
+  border-radius: 40px 40px 40px 40px;
+  padding: 5px 40px;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.button button:hover {
+  color: #007ef3;
+  background-color: white;
+  border: 1px solid #007ef3;
+}
+
+.button img {
+  cursor: pointer;
+}
+
+/* try nav code  */
+
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #ebfaff;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+#links a:hover {
+  color: #007ef3;
+}
+
+/* =======================
+  ******* Mobile Menu ******
+  ========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ebfaff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(75, 75, 75);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #007ef3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
   }
-  .button {
-    align-content: center;
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
     align-items: center;
   }
-  
-  .button button {
-    background-color: #007ef3;
-    border: none;
-    color: white;
-    border-radius: 40px 40px 40px 40px;
-    padding: 5px 40px;
-    font-family: "Nunito Sans", Sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    margin-left: 100px;
-    cursor: pointer;
-  }
-  
-  .button button:hover {
-    color: #007ef3;
-    background-color: white;
-    border: 1px solid #007ef3;
-  }
-  
-  .button img {
-    cursor: pointer;
-  }
-  
-  /* try nav code  */
-  
-  #navbar {
-    display: grid;
-    min-height: 100px;
-    grid-auto-flow: column;
-    background-color: #ebfaff;
-    grid-gap: 1.5em;
-    padding: 0 40px;
-  }
-  
-  #logo {
-    display: grid;
-    justify-content: start;
-    align-content: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #000;
-    text-transform: uppercase;
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-  
-  #links {
-    display: grid;
-    justify-content: right;
-    align-content: center;
-    grid-auto-flow: column;
-    grid-gap: 1.5em;
-    font-family: "Nunito Sans", Sans-serif;
-  }
-  
-  #links a {
-    text-decoration: none;
-    color: black;
-    font-family: "Nunito Sans", Sans-serif;
-  }
-  
-  #links a:hover {
-    color: #007ef3;
-  }
-  
-  /* =======================
-    ******* Mobile Menu ******
-    ========================*/
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ebfaff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(75, 75, 75);
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #007ef3;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  a {
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* Mobile to Tablet  */
-  @media (min-width: 320px) and (max-width: 767px) {
-    #links,
-    .mobile-menu {
-      display: none;
-    }
-    #logo {
-      display: inline-grid;
-      grid-template-columns: auto auto;
-      grid-gap: 2rem;
-      align-items: center;
-    }
-  }
-  
-  /* Tablet to Desktop */
-  @media (min-width: 768px) {
-    .mobile-btn {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 854px) {
-    #navbar {
-      padding: 0px 10px;
-      width: 100%;
-      grid-gap: 20px;
-    }
-    #links {
-      grid-gap: 0px;
-      align-items: baseline;
-    }
-    #links a {
-      padding: 1em 1em 1em 1em;
-      font-size: 10px;
-    }
-    #logo img {
-      width: 120px;
-      height: 30px;
-    }
-    .button button {
-      border-radius: 13px;
-      padding: 5px 8px;
-      font-size: 11px;
-      margin-left: 2px;
-    }
-  }
-  
-  @media screen and (min-width: 855px) and (max-width: 990px) {
-    #navbar {
-      padding: 0px 10px;
-      width: 100%;
-      /* grid-gap: 20px; */
-    }
-    .reverse img {
-      width: 7rem;
-      height: 2rem;
-    }
-    #links {
-      grid-gap: 1rem;
-      align-items: center;
-    }
-    #links a {
-      font-size: 0.8rem;
-    }
-    .button button {
-      padding: 0.2rem 0.7rem;
-      font-size: 11px;
-      margin-left: 0px;
-    }
-    #playstore-img {
-      width: 3.2rem;
-      height: 2.8rem;
-    }
-  }
-  
-  @media screen and (min-width: 991px) and (max-width: 1200px) {
-    #navbar {
-      padding: 10px 20px;
-    }
-    .reverse img {
-      width: 7rem;
-      height: 2.3rem;
-    }
-    #links {
-      grid-gap: 1.5rem;
-      align-items: center;
-    }
-    #links a {
-      font-size: 0.8rem;
-    }
-    .button button {
-      padding: 0.2rem 1.2rem;
-      margin-left: 0rem;
-    }
-    #playstore-img {
-      width: 3.7rem;
-      height: 3rem;
-    }
-  }
-  
-  /* for 4k view */
-  @media screen and (min-width: 1200px) and (max-width: 1800px) {
-    #navbar {
-      padding: 20px 30px;
-    }
-    .reverse img {
-      width: 10rem;
-      height: 3rem;
-    }
-    #links {
-      grid-gap: 1.5rem;
-      align-items: center;
-    }
-    #links a {
-      font-size: 1rem;
-    }
-    .button button {
-      padding: 0.4rem 1.5rem;
-      margin-left: 0rem;
-    }
-  }
-  @media screen and (min-width: 1801px) and (max-width: 2600px) {
-    #navbar {
-      padding: 1rem 2rem;
-    }
-    .reverse img {
-      width: 14vw;
-      height: 6vh;
-    }
-    #links {
-      grid-gap: 2.5rem;
-      align-items: center;
-    }
-    #links a {
-      font-size: 1.5rem;
-    }
-    .button button {
-      padding: 0.6rem 2rem;
-      margin-left: 0;
-    }
-  }
-  
+}
 
-  
-  /* ---------- */
-  /* .container{
-      border: 1px solid black;
-      margin: 2rem 0rem;
-  } */
-  .continer-background{
-      background-color: #ebfaff;
-  }
-  
-  .policy {
-    text-align: center;
-    line-height: 2rem;
-    font-family: "Nunito Sans", Sans-serif;
-    padding: 0rem 0rem 4rem;
-  }
-  .policy-header h2 {
-    color: rgb(37, 37, 113);
-    font-family: "Nunito Sans", Sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-    margin: 2rem 0rem 3rem;
-  }
-  .policy-content {
-    text-align: justify;
-  }
-  .policy-content h5{
-      font-weight: 800;
-      margin: 0rem 0rem 1rem;
-  }
-  .policy-content li{
-      font-size: 1.1rem;
-  }
-  
-
-
-
-  /* responsive page css */
-@media screen and (max-width: 580px){
-  .policy-content{
-    padding: 0rem 2rem;
-  }
-  .policy-header h2{
-    font-size: 2rem;
-  }
-  .policy-content h5{
-    font-weight: 700;
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
   }
 }
+
+@media (max-width: 854px) {
+  #navbar {
+    padding: 0px 10px;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  #links {
+    grid-gap: 0px;
+    align-items: baseline;
+  }
+  #links a {
+    padding: 1em 1em 1em 1em;
+    font-size: 10px;
+  }
+  #logo img {
+    width: 120px;
+    height: 30px;
+  }
+  .button button {
+    border-radius: 13px;
+    padding: 5px 8px;
+    font-size: 11px;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (min-width: 855px) and (max-width: 990px) {
+  #navbar {
+    padding: 0px 10px;
+    width: 100%;
+    /* grid-gap: 20px; */
+  }
+  .reverse img {
+    width: 7rem;
+    height: 2rem;
+  }
+  #links {
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  #links a {
+    font-size: 0.8rem;
+  }
+  .button button {
+    padding: 0.2rem 0.7rem;
+    font-size: 11px;
+    margin-left: 0px;
+  }
+  #playstore-img {
+    width: 3.2rem;
+    height: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  #navbar {
+    padding: 10px 20px;
+  }
+  .reverse img {
+    width: 7rem;
+    height: 2.3rem;
+  }
+  #links {
+    grid-gap: 1.5rem;
+    align-items: center;
+  }
+  #links a {
+    font-size: 0.8rem;
+  }
+  .button button {
+    padding: 0.2rem 1.2rem;
+    margin-left: 0rem;
+  }
+  #playstore-img {
+    width: 3.7rem;
+    height: 3rem;
+  }
+}
+
+/* for 4k view */
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+  #navbar {
+    padding: 20px 30px;
+  }
+  .reverse img {
+    width: 10rem;
+    height: 3rem;
+  }
+  #links {
+    grid-gap: 1.5rem;
+    align-items: center;
+  }
+  #links a {
+    font-size: 1rem;
+  }
+  .button button {
+    padding: 0.4rem 1.5rem;
+    margin-left: 0rem;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 2600px) {
+  #navbar {
+    padding: 1rem 2rem;
+  }
+  .reverse img {
+    width: 14vw;
+    height: 6vh;
+  }
+  #links {
+    grid-gap: 2.5rem;
+    align-items: center;
+  }
+  #links a {
+    font-size: 1.5rem;
+  }
+  .button button {
+    padding: 0.6rem 2rem;
+    margin-left: 0;
+  }
+}
+
+
+
+/* ---------- */
+/* .container{
+    border: 1px solid black;
+    margin: 2rem 0rem;
+} */
+.continer-background{
+    background-color: #ebfaff;
+}
+
+.policy {
+  text-align: center;
+  line-height: 2rem;
+  font-family: "Nunito Sans", Sans-serif;
+  padding: 0rem 0rem 4rem;
+}
+.policy-header h2 {
+  color: rgb(37, 37, 113);
+  font-family: "Nunito Sans", Sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 2rem 0rem 3rem;
+}
+.policy-content {
+  text-align: justify;
+}
+.policy-content h5{
+    font-weight: 800;
+    margin: 0rem 0rem 1rem;
+}
+.policy-content li{
+    font-size: 1.1rem;
+}
+
+
+
+
+/* responsive page css */
+@media screen and (max-width: 580px){
+.policy-content{
+  padding: 0rem 2rem;
+}
+.policy-header h2{
+  font-size: 2rem;
+}
+.policy-content h5{
+  font-weight: 700;
+}
+}
 @media screen and (max-width: 385px){
-  .policy-header h2{
-    font-size: 1.8rem;
-  }
-  .policy-content h5{
-    font-weight: 600;
-    font-size: 18px;
-  }
+.policy-header h2{
+  font-size: 1.8rem;
+}
+.policy-content h5{
+  font-weight: 600;
+  font-size: 18px;
+}
 }
