@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -289,6 +290,14 @@ a {
 }
 .policy-content li{
     font-size: 1.1rem;
+    text-align: left;
+}
+.policy-content ul{
+  list-style-type: none;
+}
+.policy-content p{
+  font-size: 17px;
+  font-family: "Nunito Sans", Sans-serif;
 }
 
 /* responsive page css */
