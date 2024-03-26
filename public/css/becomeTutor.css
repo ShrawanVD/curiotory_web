@@ -262,6 +262,68 @@ a {
 }
 
 
+/* Language dropdown */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EBFAFF;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+
+.dropdown-content a:hover {
+color: white;
+}
+
+.dropdown:hover .dropdown-content {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+@media (max-width: 767px) {
+.dropdown-content {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(75, 75, 75);
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  color: #007EF3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+}
+
+
 /* ------ */
 
 /* first and third section of the become tutor page */

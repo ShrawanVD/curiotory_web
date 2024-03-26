@@ -78,7 +78,8 @@
   /* =======================
   ******* Mobile Menu ******
   ========================*/
-  .sidenav {
+  
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -89,176 +90,244 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    /* padding-right: 60px; */
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(75, 75, 75);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #007EF3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+  }
+}
+
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 854px){
+  #navbar{
+      padding: 0px 10px;
+      width: 100%;
+      grid-gap: 20px;
+  }
+  #links{
+      grid-gap: 0px;
+      align-items: baseline;;
+  }
+  #links a{
+      padding: 1em 1em 1em 1em;
+      font-size: 10px;
+  }
+  #logo img{
+      width:120px;
+      height: 30px;
+  }
+  .button button{
+      border-radius: 13px;
+      padding: 5px 8px;
+      font-size: 11px;
+      margin-left: 2px;
+  }
+}
+
+@media screen and (min-width:855px) and (max-width: 990px){
+  #navbar{
+      padding: 0px 10px;
+      width: 100%;
+      /* grid-gap: 20px; */
+  }
+  .reverse img{
+      width: 7rem;
+      height: 2rem;
+  }
+  #links{
+      grid-gap: 1rem;
+      align-items: center;;
+  }
+  #links a{
+      font-size: 0.8rem;
+  }
+  .button button{
+      padding: 0.2rem 0.7rem;
+      font-size: 11px;
+      margin-left: 0px;
+  }
+  #playstore-img{
+      width: 3.2rem;
+      height: 2.8rem;
+  }
+}
+
+
+@media screen and (min-width:991px) and (max-width: 1200px){
+  #navbar{
+      padding: 10px 20px;
+  }
+  .reverse img{
+      width: 7rem;
+      height: 2.3rem;
+  }
+  #links{
+      grid-gap: 1.5rem;
+      align-items: center;
+  }
+  #links a{
+      font-size: 0.8rem;
+  }
+  .button button{
+      padding: 0.2rem 1.2rem;
+      margin-left: 0rem;
+  }
+  #playstore-img{
+      width: 3.7rem;
+      height: 3rem;
+  }
+}
+
+/* for 4k view */
+@media screen and (min-width:1200px) and (max-width: 1800px){
+  #navbar{
+      padding: 20px 30px;
+  }
+  .reverse img{
+      width: 10rem;
+      height: 3rem;
+  }
+  #links{
+      grid-gap: 1.5rem;
+      align-items: center;
+  }
+  #links a{
+      font-size: 1rem;
+  }
+  .button button{
+      padding: 0.4rem 1.5rem;
+      margin-left: 0rem;
+  }
+}
+@media screen and (min-width:1801px) and (max-width: 2600px){
+  #navbar{
+      padding: 1rem 2rem;
+  }
+  .reverse img{
+      width: 14vw;
+      height: 6vh;
+  }
+  #links{
+      grid-gap: 2.5rem;
+      align-items: center;
+  }
+  #links a{
+      font-size: 1.5rem;
+  }
+  .button button{
+      padding: 0.6rem 2rem;
+      margin-left: 0;
+  }
+}
+
+/* Language dropdown */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EBFAFF;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;
   }
   
-  .sidenav a {
+  .dropdown-content a {
+    color: rgb(238, 22, 22);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem; /* Adjust font size as needed */
+    width: calc(100% / 3); /* Set the width of each column */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .dropdown-content {
+    position: relative;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content a {
+    color: black;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: rgb(75, 75, 75);
     display: block;
     transition: 0.3s;
   }
-  
-  .sidenav a:hover {
+
+  .dropdown-content a:hover {
     color: #007EF3;
   }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
-  
-  a {
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* Mobile to Tablet  */
-  @media (min-width: 320px) and (max-width: 767px) {
-    #links,
-    .mobile-menu {
-      display: none;
-    }
-    #logo {
-      display: inline-grid;
-      grid-template-columns: auto auto;
-      grid-gap: 2rem;
-      align-items: center;
-    }
-  }
+}
   
   
-  /* Tablet to Desktop */
-  @media (min-width: 768px) {
-    .mobile-btn {
-      display: none;
-    }
-  }
   
-  @media (max-width: 854px){
-    #navbar{
-        padding: 0px 10px;
-        width: 100%;
-        grid-gap: 20px;
-    }
-    #links{
-        grid-gap: 0px;
-        align-items: baseline;;
-    }
-    #links a{
-        padding: 1em 1em 1em 1em;
-        font-size: 10px;
-    }
-    #logo img{
-        width:120px;
-        height: 30px;
-    }
-    .button button{
-        border-radius: 13px;
-        padding: 5px 8px;
-        font-size: 11px;
-        margin-left: 2px;
-    }
-  }
-  
-  @media screen and (min-width:855px) and (max-width: 990px){
-    #navbar{
-        padding: 0px 10px;
-        width: 100%;
-        /* grid-gap: 20px; */
-    }
-    .reverse img{
-        width: 7rem;
-        height: 2rem;
-    }
-    #links{
-        grid-gap: 1rem;
-        align-items: center;;
-    }
-    #links a{
-        font-size: 0.8rem;
-    }
-    .button button{
-        padding: 0.2rem 0.7rem;
-        font-size: 11px;
-        margin-left: 0px;
-    }
-    #playstore-img{
-        width: 3.2rem;
-        height: 2.8rem;
-    }
-  }
-  
-  
-  @media screen and (min-width:991px) and (max-width: 1200px){
-    #navbar{
-        padding: 10px 20px;
-    }
-    .reverse img{
-        width: 7rem;
-        height: 2.3rem;
-    }
-    #links{
-        grid-gap: 1.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 0.8rem;
-    }
-    .button button{
-        padding: 0.2rem 1.2rem;
-        margin-left: 0rem;
-    }
-    #playstore-img{
-        width: 3.7rem;
-        height: 3rem;
-    }
-  }
-  
-  /* for 4k view */
-  @media screen and (min-width:1200px) and (max-width: 1800px){
-    #navbar{
-        padding: 20px 30px;
-    }
-    .reverse img{
-        width: 10rem;
-        height: 3rem;
-    }
-    #links{
-        grid-gap: 1.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 1rem;
-    }
-    .button button{
-        padding: 0.4rem 1.5rem;
-        margin-left: 0rem;
-    }
-  }
-  @media screen and (min-width:1801px) and (max-width: 2600px){
-    #navbar{
-        padding: 1rem 2rem;
-    }
-    .reverse img{
-        width: 14vw;
-        height: 6vh;
-    }
-    #links{
-        grid-gap: 2.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 1.5rem;
-    }
-    .button button{
-        padding: 0.6rem 2rem;
-        margin-left: 0;
-    }
-  }
+
+
 /* navbar section ends */
 /* ------cover page section ------- */
 
