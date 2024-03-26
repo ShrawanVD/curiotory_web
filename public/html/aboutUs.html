@@ -150,10 +150,10 @@
       <div class="close-btn" onclick="closeSidebar()">×</div>
       <h1>Quick and Simple enrollment</h1>
       <form
-        class="registration-form"
+        class="registration-form allForm"
         action="https://backendapi-ay7s.onrender.com/enroll"
         method="post"
-        onsubmit="return showAlert()"
+        id="quickFormUrl"
       >
         <label for="name">Name:</label>
         <input type="text" id="name" name="fullName" required />
@@ -492,5 +492,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- for alert  -->
+    <script src="../js/alert.js"></script>
   </body>
 </html>

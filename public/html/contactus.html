@@ -136,7 +136,8 @@
         <form
           method="POST"
           action="https://backendapi-ay7s.onrender.com/sendMsg"
-          onsubmit="return showAlert()"
+          id="contactFormUrl"
+          class="allForm"
         >
           <label for="sender_name">Your Name</label><br />
           <input type="text" name="fname" autocomplete="name" required /><br />
@@ -266,5 +267,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="../js/script.js"></script>
+
+    <!-- for alert  -->
+    <script src="../js/alert.js"></script>
   </body>
 </html>

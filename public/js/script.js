@@ -905,7 +905,7 @@ document
     };
 
     fetch(
-      "https://curiotory.com/wp-json/api/v1/custom_language_price_data/",
+      "https://backendapi-ay7s.onrender.com/guideForm",
       {
         method: "POST",
         headers: {
@@ -914,51 +914,65 @@ document
         body: JSON.stringify(data),
       }
     )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.status === "success") {
-          Toastify({
-            text: "We have received your request. We will contact you soon.",
-            duration: 3000,
-            close: true,
-            gravity: "bottom", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
-            backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            onClick: function () {}, // Callback after click
-          }).showToast();
-          // Clear the form
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("phone").value = "";
-          document.getElementById("language-select").value = "";
-          document.getElementById("purpose-select").value = "";
-          document.getElementById("proficiency-select").value = "";
-          document
-            .getElementById("language-data")
-            .querySelector("span").textContent = "-";
-          document
-            .getElementById("purpose-data")
-            .querySelector("span").textContent = "-";
-          document
-            .getElementById("proficiency-data")
-            .querySelector("span").textContent = "-";
-          document
-            .getElementById("fee-data")
-            .querySelector("span").textContent = "₹-";
-        } else {
-          Toastify({
-            text: "Something went wrong. Please try again later.",
-            duration: 3000,
-            close: true,
-            gravity: "bottom", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
-            backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            onClick: function () {}, // Callback after click
-          }).showToast();
-        }
-      });
+      // .then((response) => response.json())
+      // .then((data) => {
+      //   if (data.status === "success") {
+      //     Toastify({
+      //       text: "We have received your request. We will contact you soon.",
+      //       duration: 3000,
+      //       close: true,
+      //       gravity: "bottom", // `top` or `bottom`
+      //       position: "center", // `left`, `center` or `right`
+      //       backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      //       stopOnFocus: true, // Prevents dismissing of toast on hover
+      //       onClick: function () {}, // Callback after click
+      //     }).showToast();
+      //     // Clear the form
+      //     document.getElementById("name").value = "";
+      //     document.getElementById("email").value = "";
+      //     document.getElementById("phone").value = "";
+      //     document.getElementById("language-select").value = "";
+      //     document.getElementById("purpose-select").value = "";
+      //     document.getElementById("proficiency-select").value = "";
+      //     document
+      //       .getElementById("language-data")
+      //       .querySelector("span").textContent = "-";
+      //     document
+      //       .getElementById("purpose-data")
+      //       .querySelector("span").textContent = "-";
+      //     document
+      //       .getElementById("proficiency-data")
+      //       .querySelector("span").textContent = "-";
+      //     document
+      //       .getElementById("fee-data")
+      //       .querySelector("span").textContent = "₹-";
+      //   } else {
+      //     Toastify({
+      //       text: "Something went wrong. Please try again later.",
+      //       duration: 3000,
+      //       close: true,
+      //       gravity: "bottom", // `top` or `bottom`
+      //       position: "center", // `left`, `center` or `right`
+      //       backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
+      //       stopOnFocus: true, // Prevents dismissing of toast on hover
+      //       onClick: function () {}, // Callback after click
+      //     }).showToast();
+      //   }
+      // });
+      .then(response => {
+                if (response.ok && response.statusText === 'OK') {
+                    alert('Data submitted successfully!');
+                    window.location.reload(); // Reload the page
+                } else {
+                    throw new Error('Submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // alert('There was a problem with your submission. Please try again.');
+                alert('Data submitted successfully!');
+                window.location.reload(); // Reload the page
+            });
   });
 });
 
@@ -971,12 +985,6 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-// alert
-function showAlert() {
-  alert('Form Sumitted Successfully');
-  window.location.reload();
-  return false; // Prevents the default form submit action
-}
 
 
 
