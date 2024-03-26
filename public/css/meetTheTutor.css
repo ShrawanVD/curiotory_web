@@ -526,7 +526,11 @@
     background-color: #EBFAFF;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    background-image: url('https://t3.ftcdn.net/jpg/05/55/47/40/360_F_555474083_ClRSWl1qtF76UOxqsjkessDcLMX7IAts.jpg');
+    /* background-image: url('https://www.pngfind.com/pngs/m/104-1042296_fancy-corner-borders-left-bottom-right-corner-border.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;  */
   }
   .photoInfo img{
     height: 80%;
@@ -677,5 +681,72 @@
     }
     .videoButton iframe{
       width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .left-section form{
+      padding: 0rem 2rem;
+    }
+    .form-group{
+      text-align: left;
+      padding: 1rem 0rem;
+    }
+    .form-group select{
+      width: 200px;
+    }
+    .form-group option{
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .left-section h2{
+      font-size: 3.2rem;
+    }
+    .left-section form{
+      padding: 0rem 1rem;
+      text-align: left;
+    }
+    .form-group{
+      padding: 1rem 3rem;
+    }
+    .form-group select{
+      width: 80px;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .left-section form{
+      padding: 0rem 4rem;
+    }
+    .form-group{
+      text-align: left;
+      padding: 1rem 0rem;
+    }
+    .form-group select{
+      width: 300px;
+    }
+    .form-group option{
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .left-section h2{
+      font-size: 3.5rem;
+    }
+    .left-section form{
+      padding: 0rem 4rem;
+    }
+    .form-group{
+      text-align: left;
+      padding: 1rem 0rem;
+    }
+    .form-group select{
+      width: 300px;
+    }
+    .form-group option{
+      width: 300px;
     }
   }
