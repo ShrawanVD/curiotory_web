@@ -1097,6 +1097,7 @@ flex-direction: column;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-right: 30%;
 }
 
 .phases-for-enroll .phase {
