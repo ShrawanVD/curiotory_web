@@ -1,0 +1,394 @@
+body {
+    /* margin: 0;
+    padding: 0; */
+    font-family: Arial, sans-serif;
+    /* background-image: url('../images/Blogs/blog-bg.jpg');  */
+    background-color: #EBFAFF;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* navbar */
+
+
+/* Language dropdown */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EBFAFF;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  
+  
+  .dropdown-content a:hover {
+  color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  @media (max-width: 767px) {
+  .dropdown-content {
+    position: relative;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .dropdown-content a:hover {
+    color: #007EF3;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  }
+  
+  .button {
+      align-content: center;
+      align-items: center;
+    }
+    
+    .button button {
+      background-color: #007EF3;
+      border: none;
+      color: white;
+      border-radius: 40px 40px 40px 40px;
+      padding: 5px 40px;
+      font-family: "Nunito Sans", Sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 100px;
+      cursor: pointer;
+    }
+    
+    .button button:hover {
+      color: #007EF3;
+      background-color: white;
+      border: 1px solid #007EF3;
+    }
+    
+    .button img {
+      cursor: pointer;
+    }
+    
+    
+    /* try nav code  */
+      
+    #navbar {
+      display: grid;
+      min-height: 100px;
+      grid-auto-flow: column;
+      background-color: #f3fbfd;
+      grid-gap: 1.5em;
+      padding: 0 40px;
+    }
+    
+    #logo {
+      display: grid;
+      justify-content: start;
+      align-content: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;
+      text-transform: uppercase;
+    }
+    
+    .logo {
+      cursor: pointer;
+    }
+    
+    #links {
+      display: grid;
+      justify-content: right;
+      align-content: center;
+      grid-auto-flow: column;
+      grid-gap: 1.5em;
+      font-family: "Nunito Sans", Sans-serif;
+    }
+    
+    #links a {
+      text-decoration: none;
+      color: black;
+      font-family: "Nunito Sans", Sans-serif;
+    }
+    
+    #links a:hover {
+      color: #007EF3;
+    }
+    
+    /* =======================
+    ******* Mobile Menu ******
+    ========================*/
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:#EBFAFF;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: rgb(75, 75, 75);
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #007EF3;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    a {
+      font-family: "Open Sans", sans-serif;
+    }
+    
+    /* Mobile to Tablet  */
+    @media (min-width: 320px) and (max-width: 767px) {
+      #links,
+      .mobile-menu {
+        display: none;
+      }
+      #logo {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+        align-items: center;
+      }
+    }
+    
+    
+    /* Tablet to Desktop */
+    @media (min-width: 768px) {
+      .mobile-btn {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 854px){
+      #navbar{
+          padding: 0px 10px;
+          width: 100%;
+          grid-gap: 20px;
+      }
+      #links{
+          grid-gap: 0px;
+          align-items: baseline;;
+      }
+      #links a{
+          padding: 1em 1em 1em 1em;
+          font-size: 10px;
+      }
+      #logo img{
+          width:120px;
+          height: 30px;
+      }
+      .button button{
+          border-radius: 13px;
+          padding: 5px 8px;
+          font-size: 11px;
+          margin-left: 2px;
+      }
+    }
+    
+    @media screen and (min-width:855px) and (max-width: 990px){
+      #navbar{
+          padding: 0px 10px;
+          width: 100%;
+          /* grid-gap: 20px; */
+      }
+      .reverse img{
+          width: 7rem;
+          height: 2rem;
+      }
+      #links{
+          grid-gap: 1rem;
+          align-items: center;;
+      }
+      #links a{
+          font-size: 0.8rem;
+      }
+      .button button{
+          padding: 0.2rem 0.7rem;
+          font-size: 11px;
+          margin-left: 0px;
+      }
+      #playstore-img{
+          width: 3.2rem;
+          height: 2.8rem;
+      }
+    }
+    
+    
+    @media screen and (min-width:991px) and (max-width: 1200px){
+      #navbar{
+          padding: 10px 20px;
+      }
+      .reverse img{
+          width: 7rem;
+          height: 2.3rem;
+      }
+      #links{
+          grid-gap: 1.5rem;
+          align-items: center;
+      }
+      #links a{
+          font-size: 0.8rem;
+      }
+      .button button{
+          padding: 0.2rem 1.2rem;
+          margin-left: 0rem;
+      }
+      #playstore-img{
+          width: 3.7rem;
+          height: 3rem;
+      }
+    }
+    
+    /* for 4k view */
+    @media screen and (min-width:1200px) and (max-width: 1800px){
+      #navbar{
+          padding: 20px 30px;
+      }
+      .reverse img{
+          width: 10rem;
+          height: 3rem;
+      }
+      #links{
+          grid-gap: 1.5rem;
+          align-items: center;
+      }
+      #links a{
+          font-size: 1rem;
+      }
+      .button button{
+          padding: 0.4rem 1.5rem;
+          margin-left: 0rem;
+      }
+    }
+    @media screen and (min-width:1801px) and (max-width: 2600px){
+      #navbar{
+          padding: 1rem 2rem;
+      }
+      .reverse img{
+          width: 14vw;
+          height: 6vh;
+      }
+      #links{
+          grid-gap: 2.5rem;
+          align-items: center;
+      }
+      #links a{
+          font-size: 1.5rem;
+      }
+      .button button{
+          padding: 0.6rem 2rem;
+          margin-left: 0;
+      }
+    }
+    
+    
+    /* ------ */
+
+
+
+
+
+
+/* blogs content */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    width: 60%; 
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px; 
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2)
+}
+
+.header img:hover {
+    cursor: pointer;
+	box-shadow: 0 0 15px 1px black;
+}
+
+.blog-post {
+    background-color: rgba(223, 244, 246, 0.7);
+    margin-bottom: 5rem;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2)
+}
+
+.blog-post:hover{
+    cursor: pointer;
+	box-shadow: 0 0 15px 1px black;
+}
+
+.blog-post h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify ;
+}
+

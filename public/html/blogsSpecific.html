@@ -4,17 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- bootstrap - footer -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bs-brain@2.0.3/tutorials/timelines/timeline-1/assets/css/timeline-1.css"
-    />
-
     <!-- footer icons -->
     <link
       rel="stylesheet"
@@ -23,10 +12,14 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../css/language.css" />
+    <!-- bootstrap css link -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- <link rel="stylesheet" href="/public/css/language.css" /> -->
-    <title>Spanish Language</title>
+    <title>Blog Specific Post</title>
+    <link rel="stylesheet" href="../css/blogsSpecific.css" />
   </head>
   <body>
     <!-- try navbar responsive code -->
@@ -53,7 +46,7 @@
             <a href="#" class="dropdown-toggle">Language Solution</a>
             <div class="dropdown-content">
               <a href="./french.html" style="font-size: 0.9rem">French</a>
-              <a href="#" style="font-size: 0.9rem">Spanish</a>
+              <a href="./spanish.html" style="font-size: 0.9rem">Spanish</a>
               <a href="./german.html" style="font-size: 0.9rem">German</a>
               <a href="./russian.html" style="font-size: 0.9rem">Russian</a>
               <a href="./english.html" style="font-size: 0.9rem">English</a>
@@ -101,8 +94,8 @@
       <div class="dropdown">
         <a href="#" class="dropdown-toggle">Language Solution</a>
         <div class="dropdown-content">
-            <a href="./french.html" style="font-size: 0.9rem">French</a>
-            <a href="#" style="font-size: 0.9rem">Spanish</a>
+          <a href="./french.html" style="font-size: 0.9rem">French</a>
+          <a href="./spanish.html" style="font-size: 0.9rem">Spanish</a>
           <a href="./german.html" style="font-size: 0.9rem">German</a>
           <a href="./russian.html" style="font-size: 0.9rem">Russian</a>
           <a href="./english.html" style="font-size: 0.9rem">English</a>
@@ -120,78 +113,36 @@
       <a href="./contactus.html">Contact Us</a>
     </div>
 
-    <div class="hero">
-      <h1>Spanish Language</h1>
-    </div>
-    <!-- TW0 COLUMN LAYOUT -->
-    <div class="row">
-      <div class="col sp-2">
-        <img
-          src="../images/Languages/spanish - 1.jpeg"
-          alt="Language Learning"
-          style="margin: 2rem 0"
-        />
-        <h3>From Beginner to Advanced Proficiency</h3>
-        <p>
-            Embark on a journey toward mastering Spanish, starting with fundamental 
-            vocabulary and grammar, gradually progressing to fluency and a deeper 
-            cultural understanding.
-        </p>
-        <p>
-            Begin with introductory resources to establish a strong base, 
-            then navigate through intermediate stages, refining speaking, 
-            listening, reading, and writing skills.
-        </p>
-        <p>
-            Immerse yourself in authentic Spanish content, engage in conversational practice, 
-            and challenge yourself with advanced materials to achieve proficiency.
-        </p>
+    <!-- blogs specific content -->
+    <div class="container">
+      <div class="header">
+        <!-- Image at the top -->
+        <img src="../images/Blogs/1.jpg" alt="Header Image" />
       </div>
-      <div class="col sp-2">
-        <img
-          src="../images/Languages/spanish - 2.jpeg"
-          alt="Certification Exams"
-          style="margin: 2rem 0"
-        />
-        <h3>Certification Exams and Proficiency Levels</h3>
-        <p>
-            Validate your Spanish language proficiency through recognized exams such 
-            as DELE (Diplomas de Español como Lengua Extranjera) and 
-            SIELE (Servicio Internacional de Evaluación de la Lengua Española). 
-        </p>
-        <p>
-            These exams assess proficiency levels ranging from A1 (Elementary) to 
-            C2 (Mastery), offering globally acknowledged certification for 
-            academic and professional endeavors.
-        </p>
-        <p>
-            Prepare diligently for exams tailored to your proficiency level and earn 
-            certification as tangible evidence of your Spanish language competence.
-        </p>
-        <a href="./registrationForm.html" class="btn plain">Discover More</a>
-      </div>
-    </div>
+      <div class="blog-post">
+        <!-- Title -->
+        <h1>
+          Unlocking Global Opportunities: The Power of Multilingualism The Power
+          of Multilingualism
+        </h1>
 
-    <!-- BANNER SECTION -->
-    <div class="banner">
-      <h2 id="banner-title">Application</h2>
-      <p>
-        Proficiency in Spanish opens avenues in international business, 
-        diplomacy, tourism, and cultural exchange, fostering diverse 
-        opportunities and enriching global experiences. Whether navigating 
-        multinational negotiations, facilitating cross-cultural communication, 
-        or immersing in Spanish-speaking regions, proficiency in Spanish enhances 
-        career prospects and fosters meaningful connections across borders.
-      </p>
+        <!-- Content -->
+        <p>
+          In today's interconnected world, proficiency in foreign languages
+          opens doors to a myriad of global opportunities. From expanding career
+          prospects to fostering cross-cultural understanding, embracing
+          multilingualism is key to navigating the international landscape.
+        </p>
+      </div>
     </div>
 
     <!-- Footer -->
 
     <footer
       class="text-center text-white"
-      style="background-color: #3f51b5; bottom: 0"
+      style="background-color: #3f51b5; bottom: 0;"
     >
-      <div class="container">
+      <div class="container" style="max-width: 80vw;">
         <section>
           <div class="row text-center d-flex justify-content-center pt-5">
             <div class="col-md-2">
@@ -292,7 +243,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script src="../js/script.js"></script>
   </body>
 </html>
