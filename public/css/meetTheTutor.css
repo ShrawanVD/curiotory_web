@@ -590,11 +590,10 @@ flex-direction: column;
     background-color: #EBFAFF;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    /* background-image: url('https://www.pngfind.com/pngs/m/104-1042296_fancy-corner-borders-left-bottom-right-corner-border.png');
-    background-size: cover; 
+    background-image: url('https://thumbs.dreamstime.com/b/scroll-border-black-white-page-171439252.jpg');
+    background-size: 100% 100%; 
     background-position: center; 
     background-repeat: no-repeat; 
-    padding: 20px;  */
   }
   .photoInfo img{
     height: 80%;

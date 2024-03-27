@@ -118,6 +118,21 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .closebtn-rotate {
+    cursor: pointer; 
+    color: rgb(18, 63, 122);
+    animation: rotate 3s linear forwards;
+  }
+
 /* Mobile to Tablet  */
 @media (min-width: 320px) and (max-width: 767px) {
   #links,
@@ -991,7 +1006,7 @@ display: none;
 /* learn foreign language section starts */
 .learn-foriegn-lang-section{
     background-color: white;
-    padding: 2rem 3rem;
+    padding: 2rem 10rem;
 }
 .learn-foriegn-lang{
     background-color: white;
@@ -1082,6 +1097,11 @@ display: none;
         padding: 2rem 0rem;
     }
 }
+@media screen and (max-width: 1400px){
+    .learn-foriegn-lang-heading{
+        margin: -9% 13rem 4rem;
+    }
+}
 
 @media screen and (max-width: 1200px){
     .learn-foriegn-lang{
@@ -1089,8 +1109,7 @@ display: none;
         padding: 2rem 0rem;
     }
     .learn-foriegn-lang-heading{
-        margin-top: -6%;
-        margin-bottom: 4rem;
+        margin: -10% 4rem 4rem;
     }
     .learn-foriegn-lang-heading h1{
         font-size: 40px;
@@ -1237,7 +1256,8 @@ display: none;
 
 .foreign-lang-section{
     background-color: white;
-    padding: 5rem 9rem;
+    padding: 5rem 9.5rem;
+    
 }
 .foreign-lang-section-heading{
     align-items: center;
@@ -1682,7 +1702,7 @@ display: none;
     border-color: #C8C8C8;
     border-radius: 10px 10px 10px 10px;
     padding: 12.9px 27.43px 13.24px 27.71px;
-    margin-right: 4rem;
+    margin-right: 3rem;
     margin-bottom: 2rem;
 }
 .lang-button:hover{
@@ -2091,7 +2111,7 @@ display: none;
     }
     .get-started .right-side img{
         width: 30vw;
-        height: 35vh;
+        height: 41vh;
     }
 }
 
