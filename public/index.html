@@ -54,8 +54,7 @@
           >
             &#9776;
           </div>
-          <!-- <div class="logo">Gr<span>id</span> CSS</div> -->
-          <a href="#"
+          <a href="../index.html"
             ><img
               width="178px"
               height="44px"
@@ -68,32 +67,18 @@
             <a href="#" class="dropdown-toggle">Language Solution</a>
             <div class="dropdown-content">
               <a href="./html/french.html" style="font-size: 0.9rem">French</a>
-              <a href="./html/spanish.html" style="font-size: 0.9rem"
-                >Spanish</a
-              >
+              <a href="./html/spanish.html" style="font-size: 0.9rem">Spanish</a>
               <a href="./html/german.html" style="font-size: 0.9rem">German</a>
-              <a href="./html/russian.html" style="font-size: 0.9rem"
-                >Russian</a
-              >
-
-              <a href="./html/english.html" style="font-size: 0.9rem"
-                >English</a
-              >
-              <a href="./html/mandarin.html" style="font-size: 0.9rem"
-                >Mandarin</a
-              >
+              <a href="./html/russian.html" style="font-size: 0.9rem">Russian</a>
+              <a href="./html/english.html" style="font-size: 0.9rem">English</a>
+              <a href="./html/mandarin.html" style="font-size: 0.9rem">Mandarin</a>
               <a href="./html/dutch.html" style="font-size: 0.9rem">Dutch</a>
               <a href="./html/portuguese.html" style="font-size: 0.9rem"
                 >Portuguese</a
               >
-
-              <a href="./html/japanese.html" style="font-size: 0.9rem"
-                >Japanese</a
-              >
+              <a href="./html/japanese.html" style="font-size: 0.9rem">Japanese</a>
               <a href="./html/korean.html" style="font-size: 0.9rem">Korean</a>
-              <a href="./html/arabic.html" style="font-size: 0.9rem"
-                >Arabic</a
-              >
+              <a href="./html/arabic.html" style="font-size: 0.9rem">Arabic</a>
             </div>
           </div>
 
@@ -124,10 +109,20 @@
 
     <!-- Mobile Menu -->
     <div id="mySidenav" class="sidenav">
-      <a style="cursor: pointer" class="closebtn" onclick="closeNav()"
+      <a
+        style="cursor: pointer; color: rgb(18, 63, 122)"
+        class="closebtn closebtn-rotate"
+        onclick="closeNav()"
         >&times;</a
       >
       <div class="dropdown">
+        <a href="#"
+          ><img
+            width="170px"
+            height="45px"
+            src="./images/Index/0 - logo.png"
+            class="logo"
+        /></a>
         <a href="#" class="dropdown-toggle">Language Solution</a>
         <div class="dropdown-content">
           <a href="./html/french.html" style="font-size: 0.9rem">French</a>
@@ -150,6 +145,41 @@
       <a href="./html/meetTheTutor.html">Meet the Tutors</a>
       <a href="./html/aboutUs.html">About Us</a>
       <a href="./html/contactus.html">Contact Us</a>
+      <div class="text-center mb-4 d-flex">
+        <a
+          href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in"
+          class="text-black"
+          style="color: #0a66c2"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/Curiotory/"
+          class="text-black"
+          target="_blank"
+          style="color: #1877f2"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg"
+          class="text-black"
+          style="color: #ff0000"
+          target="_blank"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/curiotory_/"
+          class="text-black"
+          style="color: #e95950"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
 
     <!-- cover page section -->
@@ -307,114 +337,133 @@
       </div>
     </div>
 
+    <!-- guide form section -->
 
+    <!-- Guide form -->
+    <div class="copy-html">
+      <div class="containe">
+        <div class="card shadow mt-3 p-3">
+          <p class="fs-4">LET ME BE YOUR GUIDE:</p>
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                Mark your information and I will suggest course that is best for
+                you!
+              </p>
 
-    
-  <!-- guide form section -->
-
-  <!-- Guide form -->
-  <div class="copy-html">
-    <div class="containe">
-      <div class="card shadow mt-3 p-3">
-        <p class="fs-4">LET ME BE YOUR GUIDE:</p>
-        <div class="row">
-          <div class="col-md-8">
-            <p>
-              Mark your information and I will suggest course that is best
-              for you!
-            </p>
-
-            <div>
-              <p class="fw-bold">Language</p>
-              <fieldset class="radioset language">
-                <ul>
-                  <!-- Languages will be added dynamically -->
-                </ul>
-                <select class="form-select" id="language-select">
-                  <!-- Languages will be added dynamically -->
-                </select>
-              </fieldset>
-            </div>
-
-            <div>
-              <p class="fw-bold">Purpose of Learning</p>
-              <fieldset class="radioset purpose">
-                <ul>
-                  <!-- Purposes will be added dynamically -->
-                </ul>
-                <select class="form-select" id="purpose-select">
-                  <!-- Purposes will be added dynamically -->
-                </select>
-              </fieldset>
-            </div>
-
-            <div>
-              <p class="fw-bold">Proficiency Level</p>
-              <fieldset class="radioset proficiency">
-                <ul>
-                  <!-- Proficiency levels will be added dynamically -->
-                </ul>
-                <select class="form-select" id="proficiency-select">
-                  <!-- Proficiency levels will be added dynamically -->
-                </select>
-              </fieldset>
-            </div>
-          </div>
-
-          <div class="col-md-4 form-div-container">
-            <form method="post" action="https://backendapi-ay7s.onrender.com/guideForm" id="language-price-form"
-              class="row g-3 pb-3 form-background rounded px-2" >
-              <div class="col-md-12">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" />
-              </div>
-              <div class="col-md-12">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" />
-              </div>
-              <div class="col-md-12">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" name="phone" />
+              <div>
+                <p class="fw-bold">Language</p>
+                <fieldset class="radioset language">
+                  <ul>
+                    <!-- Languages will be added dynamically -->
+                  </ul>
+                  <select class="form-select" id="language-select">
+                    <!-- Languages will be added dynamically -->
+                  </select>
+                </fieldset>
               </div>
 
-              <div class="col-md-12">
-                <div class="row">
-                  <div id="language-data" class="col-md-6 d-flex flex-column">
-                    <strong>Language</strong>
-                    <span>-</span>
+              <div>
+                <p class="fw-bold">Purpose of Learning</p>
+                <fieldset class="radioset purpose">
+                  <ul>
+                    <!-- Purposes will be added dynamically -->
+                  </ul>
+                  <select class="form-select" id="purpose-select">
+                    <!-- Purposes will be added dynamically -->
+                  </select>
+                </fieldset>
+              </div>
+
+              <div>
+                <p class="fw-bold">Proficiency Level</p>
+                <fieldset class="radioset proficiency">
+                  <ul>
+                    <!-- Proficiency levels will be added dynamically -->
+                  </ul>
+                  <select class="form-select" id="proficiency-select">
+                    <!-- Proficiency levels will be added dynamically -->
+                  </select>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-md-4 form-div-container">
+              <form
+                method="post"
+                action="https://backendapi-ay7s.onrender.com/guideForm"
+                id="language-price-form"
+                class="row g-3 pb-3 form-background rounded px-2"
+              >
+                <div class="col-md-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row">
+                    <div id="language-data" class="col-md-6 d-flex flex-column">
+                      <strong>Language</strong>
+                      <span>-</span>
+                    </div>
+
+                    <div id="purpose-data" class="col-md-6 d-flex flex-column">
+                      <strong>Purpose of Learning</strong>
+                      <span>-</span>
+                    </div>
                   </div>
 
-                  <div id="purpose-data" class="col-md-6 d-flex flex-column">
-                    <strong>Purpose of Learning</strong>
-                    <span>-</span>
+                  <div id="proficiency-data" class="row mt-3">
+                    <div class="col-md-6 d-flex flex-column">
+                      <strong>Proficiency Level</strong>
+                      <span>-</span>
+                    </div>
+
+                    <div id="fee-data" class="col-md-6 d-flex flex-column">
+                      <strong>Fee</strong>
+                      <span>₹-</span>
+                    </div>
                   </div>
                 </div>
 
-                <div id="proficiency-data" class="row mt-3">
-                  <div class="col-md-6 d-flex flex-column">
-                    <strong>Proficiency Level</strong>
-                    <span>-</span>
-                  </div>
-
-                  <div id="fee-data" class="col-md-6 d-flex flex-column">
-                    <strong>Fee</strong>
-                    <span>₹-</span>
-                  </div>
+                <div class="col-md-12">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    style="background-color: #2f327d"
+                  >
+                    Schedule your Demo class
+                  </button>
                 </div>
-              </div>
-
-              <div class="col-md-12">
-                <button type="submit" class="btn btn-success" style="background-color: #2f327d">
-                  Schedule your Demo class
-                </button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
 
     <!-- language Solution -->
     <div class="lang-sol">
@@ -706,35 +755,27 @@
               <h2>European <span style="color: #2f327d">Languages</span></h2>
             </div>
             <div class="european-lang-right-part">
-              <a id="afterbutton"
-              href="./html/french.html"
+              <a id="afterbutton" href="./html/french.html"
                 ><button class="lang-button">French</button></a
               >
-              <a id="afterbutton"
-              href="./html/german.html"
+              <a id="afterbutton" href="./html/german.html"
                 ><button class="lang-button">German</button></a
               >
-              <a id="afterbutton"
-              href="./html/dutch.html"
+              <a id="afterbutton" href="./html/dutch.html"
                 ><button class="lang-button">Dutch</button></a
               >
-              <a id="afterbutton"
-              href="./html/russian.html"
+              <a id="afterbutton" href="./html/russian.html"
                 ><button class="lang-button">Russian</button></a
               >
-              <a id="afterbutton"
-              href="./html/spanish.html"
+              <a id="afterbutton" href="./html/spanish.html"
                 ><button class="lang-button">Spanish</button></a
               >
-              <a id="afterbutton"
-              href="./html/english.html"
+              <a id="afterbutton" href="./html/english.html"
                 ><button class="lang-button">English</button></a
               >
-              <a id="afterbutton"
-              href="./html/portuguese.html"
+              <a id="afterbutton" href="./html/portuguese.html"
                 ><button class="lang-button">Portuguese</button></a
               >
-              
             </div>
           </div>
           <div class="asian-lang-section">
@@ -742,23 +783,18 @@
               <h2>Asian <span style="color: #2f327d">Languages</span></h2>
             </div>
             <div class="asian-lang-right-part">
-              <a id="afterbutton"
-              href="./html/mandarin.html"
+              <a id="afterbutton" href="./html/mandarin.html"
                 ><button class="lang-button">Mandarin</button></a
               >
-              <a id="afterbutton"
-              href="./html/portuguese.html"
+              <a id="afterbutton" href="./html/portuguese.html"
                 ><button class="lang-button">Korean</button></a
               >
-              <a id="afterbutton"
-              href="./html/arabic.html"
+              <a id="afterbutton" href="./html/arabic.html"
                 ><button class="lang-button">Arabic</button></a
               >
-              <a id="afterbutton"
-              href="./html/portuguese.html"
+              <a id="afterbutton" href="./html/portuguese.html"
                 ><button class="lang-button">Japanese</button></a
               >
-            
             </div>
           </div>
         </div>
