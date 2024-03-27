@@ -2,8 +2,8 @@ body {
     /* margin: 0;
     padding: 0; */
     font-family: Arial, sans-serif;
-    /* background-image: url('../images/Blogs/blog-bg.jpg');  */
-    background-color: #EBFAFF;
+    background-image: url('../images/Blogs/bg4.jpeg'); 
+    /* background-color: #EBFAFF; */
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,7 +18,8 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #EBFAFF;
+    /* background-color: #EBFAFF; */
+    background-color: rgba(223, 244, 246, 0.2);
     min-width: 160px;
     z-index: 1;
     border-radius: 20px;
@@ -32,6 +33,7 @@ body {
     display: block;
     font-size: 0.9rem;
     box-sizing: border-box;
+    font-weight: bold;
   }
   
   
@@ -109,7 +111,7 @@ body {
       display: grid;
       min-height: 100px;
       grid-auto-flow: column;
-      background-color: #f3fbfd;
+      /* background-color: #f3fbfd; */
       grid-gap: 1.5em;
       padding: 0 40px;
     }
@@ -350,33 +352,34 @@ body {
 }
 
 .header img {
-    max-width: 100%;
-    width: 60%; 
+    /* max-width: 100%; */
+    /* width: 60%;  */
+    width: 100%;
     margin: 0 auto;
     display: block;
     margin-bottom: 20px; 
     border-radius: 15px;
     transition: transform 0.3s ease;
-    box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2)
+    /* box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2) */
 }
 
 .header img:hover {
     cursor: pointer;
-	box-shadow: 0 0 15px 1px black;
+	/* box-shadow: 0 0 15px 1px black; */
 }
 
 .blog-post {
-    background-color: rgba(223, 244, 246, 0.7);
+    background-color: rgba(223, 244, 246, 0.2);
     margin-bottom: 5rem;
     padding: 20px;
     border-radius: 10px;
     /* border: 1px solid black; */
-    box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2)
+    /* box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2) */
 }
 
 .blog-post:hover{
     cursor: pointer;
-	box-shadow: 0 0 15px 1px black;
+	/* box-shadow: 0 0 15px 1px black; */
 }
 
 .blog-post h1 {
@@ -392,3 +395,21 @@ body {
     text-align: justify ;
 }
 
+#sub-image{
+  display: block;
+  margin: 2rem auto;
+  max-width: 60%;
+  border-radius: 20px;
+}
+
+
+
+
+/* 
+
+Now see the herirarchy of my project, 
+
+i have a blogs.html file in my project which aims for displaying all the current blogs which i have in my database
+or somewhere kind off and only the title of htis 
+
+*/
