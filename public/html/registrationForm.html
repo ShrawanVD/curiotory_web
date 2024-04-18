@@ -139,14 +139,12 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
     <!-- registration form -->
 
     <div class="registration-form">
-      <form action="https://backendapi-ay7s.onrender.com/submit_form" method="post" id="teacherRegistration"
-        class="allForm">
-        <!-- enctype="multipart/form-data" -->
+      <form action="http://localhost:3000/submit_form" method="post" enctype="multipart/form-data" class="teachers">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required /><br />
+        <input type="text" id="firstName" name="firstName"  /><br />
 
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required /><br />
+        <input type="text" id="lastName" name="lastName"  /><br />
 
         <!-- Gender -->
         <label for="gender">Gender:</label>
@@ -157,13 +155,13 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
         </div>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br />
+        <input type="email" id="email" name="email"  /><br />
 
         <label for="phoneNumber">Phone Number:</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required /><br />
+        <input type="tel" id="phoneNumber" name="phoneNumber"  /><br />
 
         <label for="currentLocation">Current Location:</label>
-        <input type="text" id="currentLocation" name="currentLocation" required /><br />
+        <input type="text" id="currentLocation" name="currentLocation"  /><br />
 
         <!-- i want to teach section -->
         <!-- Gender -->
@@ -223,7 +221,7 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
 
         <!-- certified institution -->
         <label for="certifyingInstitution">Name of Certifying Institution:</label>
-        <input type="text" id="certifyingInstitution" name="certifyingInstitution" required /><br />
+        <input type="text" id="certifyingInstitution" name="certifyingInstitution"  /><br />
 
         <!-- preferred student group -->
 
@@ -274,20 +272,20 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
 
         <!-- upload photo -->
 
-        <!-- <label for="uploadPhoto">Upload Your Recent Photo:</label>
-          <input type="file" id="uploadPhoto" name="uploadPhoto" /><br /> -->
+        <label for="uploadPhoto">Upload Your Recent Photo:</label>
+          <input type="file"  name="uploadPhoto" /><br />
 
         <!-- upload resume -->
 
-        <!-- <label for="uploadCV">Upload Your Updated CV:</label>
-          <input type="file" id="uploadCV" name="uploadCV" /><br /> -->
+        <label for="uploadCV">Upload Your Updated CV:</label>
+          <input type="file" id="uploadCV" name="uploadCV" /><br />
 
         <!-- describing ourself section -->
 
         <label for="expTranslation">Experience in Translation and Interpretation:</label>
         <textarea id="expTranslation" name="expTranslation"
           placeholder="Please describe your experience in translation and interpretation" rows="4" cols="50"
-          required></textarea><br />
+          ></textarea><br />
 
         <!-- rate per hour section -->
 
@@ -295,7 +293,7 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
           <label for="ratePerHour">Rate Per Hour:</label>
           <div class="rate-input">
             <input type="number" id="ratePerHour" name="ratePerHour" placeholder="Enter rate" min="0" step="1"
-              required />
+               />
           </div>
         </div>
 
@@ -305,7 +303,7 @@ https://www.googletagmanager.com/gtag/js?id=G-B20D9JS84E"></script>
           <label for="ratePerMonth">Rate Per Month:</label>
           <div class="rate-input">
             <input type="number" id="ratePerMonth" name="ratePerMonth" placeholder="Enter rate" min="0" step="1"
-              required />
+               />
           </div>
         </div>
 
