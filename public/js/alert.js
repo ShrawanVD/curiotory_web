@@ -89,7 +89,7 @@ document.querySelectorAll('.teachers').forEach(form => {
 
         const formData = new FormData(this); 
 
-        fetch('http://localhost:3000/submit_form', {
+        fetch('https://backendapi-ay7s.onrender.com/submit_form', {
             method: 'POST',
             body: formData 
         })
