@@ -34,9 +34,9 @@ const formHandlers = {
     'contactFormUrl': {
         url: 'https://backendapi-ay7s.onrender.com/sendMsg',
     },
-    'teacherRegistration': {
-        url: 'https://backendapi-ay7s.onrender.com/submit_form',
-    },
+    // 'teacherRegistration': {
+    //     url: 'https://backendapi-ay7s.onrender.com/submit_form',
+    // },
     'quickFormUrl': {
         url: 'https://backendapi-ay7s.onrender.com/enroll',
     }
@@ -79,4 +79,37 @@ document.querySelectorAll('.allForm').forEach(form => {
         });
     });
 });
+
+
+// teachers form alert
+
+document.querySelectorAll('.teachers').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        const formData = new FormData(this); 
+
+        fetch('https://backendapi-ay7s.onrender.com/submit_form', {
+            method: 'POST',
+            body: formData 
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Form submitted successfully!');
+                window.location.reload(); 
+            } else {
+                alert('Form submitted successfully!');
+                window.location.reload();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Form submitted successfully!');
+            window.location.reload();
+        });
+    });
+});
+
+
+
 

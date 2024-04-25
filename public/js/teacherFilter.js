@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchTeachers() {
+  const loadingSpinner = document.querySelector('.loading-spinner');
+  loadingSpinner.style.display = 'block';
+
   fetch('https://backendapi-ay7s.onrender.com/teachers')
   .then(response => {
     if (!response.ok) {
@@ -15,10 +18,12 @@ function fetchTeachers() {
       throw new Error('Invalid data format');
     }
     renderTeachers(data.teacher);
+    loadingSpinner.style.display = 'none';
   })
   .catch(error => {
     console.error('Error fetching or processing data:', error.message);
     // Display a user-friendly error message on the page if needed
+    loadingSpinner.style.display = 'none';
   });
 
 function renderTeachers(teachers) {
@@ -44,7 +49,7 @@ teachers.forEach(teacher => {
       </div>
   </div>
   <div class="videoButton">
-      <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+      <iframe src="${teacher.ytvideo}" frameborder="0" allowfullscreen></iframe>
       <div class="customButton">
         <button>Send Message</button>
         <a
