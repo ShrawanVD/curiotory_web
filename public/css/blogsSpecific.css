@@ -2,8 +2,8 @@ body {
     /* margin: 0;
     padding: 0; */
     font-family: Arial, sans-serif;
-    background-image: url('../images/Blogs/bg4.jpeg'); 
-    /* background-color: #EBFAFF; */
+    /* background-image: url('../images/Blogs/bg4.jpeg');  */
+    background-color: #EBFAFF;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -413,3 +413,240 @@ i have a blogs.html file in my project which aims for displaying all the current
 or somewhere kind off and only the title of htis 
 
 */
+
+.blogs-container {
+  padding: 2rem 4rem;
+  display: flex;
+  height: auto;
+}
+.blog-list {
+  flex: 30%;
+}
+.list-card {
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #06476a;
+}
+.list-card h1 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #022b41;
+}
+.list-card li {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4rem;
+  list-style: circle;
+  cursor: pointer;
+}
+.list-card li:hover {
+  list-style-type: disc;
+  color: #3f6e89;
+}
+.active{
+  font-weight: 800;
+}
+.blog-card {
+  padding: 1rem;
+  flex: 65%;
+  border-radius: 1%;
+  text-align: left;
+  align-items: left;
+  padding: 4rem 3rem;
+
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 5px solid #044162;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.blog-card img {
+  border-radius: 2%;
+  margin-bottom: 2rem;
+  height: 28rem;
+  width: 50rem;
+  border: 1px solid black;
+}
+.blog-card h1 {
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Lobster", sans-serif; */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #022b41;
+}
+.blogcontent{
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+/* .blog-card h3 {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+} */
+.blogDate{
+  font-family: "Lobster", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem;
+}
+
+
+@media screen and (max-width: 1390px) {
+  .blog-card {
+    padding: 4rem 3rem;
+  }
+  .blogs-container{
+    padding: 2rem 4rem;
+  }
+  .bubbles{
+    display: none;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .blogs-container{
+    padding: 2rem 2rem;
+  }
+  .list-card{
+    padding: 4rem 1rem 2.5rem;
+  }
+  .list-card li{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1172px) {
+  .blogs-container {
+    padding: 4rem 8rem;
+  }
+  .blog-card img {
+    height: 20rem;
+    width: 40rem;
+  }
+  .blog-list{
+    display: none;
+  }
+}
+@media screen and (max-width: 932px) {
+  .blog-card {
+    padding: 2rem 3rem;
+  }
+  .blog-card img {
+    height: 19rem;
+    width: 35rem;
+  }
+  .blogs-container {
+    padding: 3rem 4rem;
+  }
+}
+@media (min-width: 708px) and (max-width: 760px) {
+  .blog-card img {
+    height: 15rem;
+    width: 30rem;
+  }
+  .blog-card {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+  .blog-card h1{
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 708px) {
+  .blog-card img {
+    height: 17rem;
+    width: 30rem;
+  }
+  .blog-card {
+    padding: 2rem 1rem;
+  }
+  .blogcontent {
+    font-size: 0.85rem;
+  }
+  .blogs-container {
+    padding: 3rem 2rem;
+  }
+  .blog-card h1{
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 602px) {
+  .blog-card img {
+    height: auto;
+    width: 100%;
+  }
+  .blog-card {
+    padding: 2rem 1rem;
+  }
+  .blogcontent {
+    font-size: 0.85rem;
+  }
+  .blogs-container {
+    padding: 3rem 2rem;
+  }
+}
+@media screen and (max-width: 475px) {
+  .blogs-container{
+    padding: 2rem 1.5rem;
+  }
+
+}
+
+
+.blog-list {
+  margin: 20px;
+}
+
+.list-card {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+ul li.active {
+  font-weight: bold;
+}
+
+.blog-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* CSS for the active or clicked blog title */
+.blog-list li.active {
+  font-weight: bold;
+}
+
+
