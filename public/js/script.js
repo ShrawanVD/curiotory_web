@@ -1,3 +1,9 @@
+// js for mascot
+setTimeout(function() {
+  document.querySelector('.mascot-div').style.display = 'none';
+  document.querySelector('.index-page-div').style.display = 'block';
+}, 1000);
+
 
 
 

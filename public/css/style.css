@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+/* mascot css */
+.mascot-div{
+    height: 100%;
+    text-align: center;
+    padding-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascot-video{
+    width: 10px;
+    height: 30px;
+}
+
 /* navbar section starts */
 .button {
     align-content: center;
@@ -36,7 +51,7 @@
     display: grid;
     min-height: 100px;
     grid-auto-flow: column;
-    background-color: #EBFAFF;
+    background-color: #ebf8fc;
     grid-gap: 1.5em;
     padding: 0 40px;
   }
@@ -347,12 +362,17 @@ a {
 /* ------cover page section ------- */
 
 .cover-page{
-    padding: 8rem 11rem;
+    padding: 0rem 11rem;
     margin-bottom: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #EBFAFF !important;
+    background-color: #EBFAFF ;
+}
+/* #EBFAFF -color of cover page */
+.mascot-cover img{
+    width: 300px;
+    height: auto;
 }
 .cover-page h1{
     color: #2F327D;
@@ -395,21 +415,22 @@ a {
 
 /* Base styles for desktop */
 .cover-page {
-    padding: 8rem 11rem;
+    /* padding: 8rem 11rem; */
+    padding: 0rem 11rem;
     margin-bottom: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #EBFAFF !important;
+    background-color: #ebf8fc !important;
 }
-
+/* #ebf8fc- color mascot backgorund */
 .cover-page h1 {
     color: #2F327D;
     font-family: "Nunito Sans", sans-serif;
     font-size: 68px;
     font-weight: 800;
     line-height: 75px;
-    background-color: #EBFAFF !important;
+    background-color: #ebf8fc !important;
 }
 
 .coverpage-para {
@@ -425,7 +446,7 @@ a {
     font-weight: 400;
     line-height: 33px;
     margin-top: 20px;
-    background-color: #EBFAFF !important;
+    background-color: #ebf8fc !important;
 }
 
 .coverpage-button button {
@@ -447,9 +468,13 @@ a {
 /* Media query for tablets and mobile devices */
 @media only screen and (max-width: 1024px) {
     .cover-page {
-        padding: 6rem 4rem;
-    }
+        /* padding: 6rem 4rem; */
+    padding: 0rem 4rem;
 
+    }
+    .mascot-cover img{
+        margin-bottom: 2rem;
+    }
     .cover-page h1 {
         font-size: 48px;
         line-height: 55px;
@@ -469,9 +494,13 @@ a {
 
 @media only screen and (max-width: 768px) {
     .cover-page {
-        padding: 4rem 2rem;
-    }
+        /* padding: 4rem 2rem; */
+    padding: 1rem 2rem;
 
+    }
+    .mascot-cover img{
+        margin-bottom: 1rem;
+    }
     .cover-page h1 {
         font-size: 36px;
         line-height: 40px;
@@ -1618,7 +1647,7 @@ display: none;
     text-align: center;
     margin: 2rem 2rem;
     padding: 0rem 1rem;
-    margin-top: -16%;  
+    margin-top: -20%;  
     background-color: white; 
     z-index: 11;
 }
@@ -1632,22 +1661,27 @@ display: none;
     background-color: white;
 }
 .foreign-lang-border{
-    background-color: white;
+    /* background-image: url('../images/mascot/10mascotimg.png');
+    background-size:contain;
+    background-repeat: no-repeat; */
+    /* justify-content: center; */
     margin: 10rem 10rem;
     padding: 7rem 7rem;
     border: 1px solid #0368FF;
     border-radius: 40px;
 }
 .foreign-lang-content-para{
+
     text-align: center;
     margin: 3rem 0rem;
     padding: 0rem 4rem;
 }
 .foreign-lang-content-para p{
     color: #464646;
+    background: transparent;
     font-family: "Poppins", Sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 27px;
 
 }
@@ -1691,15 +1725,15 @@ display: none;
 .lang-button{
     font-family: "Poppins", Sans-serif;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     line-height: 31.5px;
     fill: #464646;
     color: #464646;
-    background-color: #FFFFFF;
+    background-color: transparent;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #C8C8C8;
+    border-color: black;
     border-radius: 10px 10px 10px 10px;
     padding: 12.9px 27.43px 13.24px 27.71px;
     margin-right: 3rem;

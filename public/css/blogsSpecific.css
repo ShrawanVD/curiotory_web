@@ -469,7 +469,7 @@ or somewhere kind off and only the title of htis
 .blog-card img {
   border-radius: 2%;
   margin-bottom: 2rem;
-  height: 28rem;
+  height: auto;
   width: 50rem;
   border: 1px solid black;
 }
@@ -529,7 +529,8 @@ or somewhere kind off and only the title of htis
     padding: 4rem 8rem;
   }
   .blog-card img {
-    height: 20rem;
+    /* height: 20rem; */
+  height: auto;
     width: 40rem;
   }
   .blog-list{
@@ -541,8 +542,10 @@ or somewhere kind off and only the title of htis
     padding: 2rem 3rem;
   }
   .blog-card img {
-    height: 19rem;
+    /* height: 19rem; */
     width: 35rem;
+  height: auto;
+
   }
   .blogs-container {
     padding: 3rem 4rem;
@@ -563,7 +566,9 @@ or somewhere kind off and only the title of htis
 }
 @media screen and (max-width: 708px) {
   .blog-card img {
-    height: 17rem;
+    /* height: 17rem; */
+  height: auto;
+
     width: 30rem;
   }
   .blog-card {
